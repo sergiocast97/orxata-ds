@@ -9,7 +9,7 @@
   /* Border Radius */
   --radius-theme-sm: var(--radius-sm);
   --radius-theme-md: var(--radius-md);
-  --radius-theme-md: var(--radius-lg);
+  --radius-theme-lg: var(--radius-lg);
 
   /* Colour Palette */
   --color-theme-heading: #18181b;
@@ -38,6 +38,11 @@
   .container {
     margin-inline: auto;
     padding: calc(var(--spacing) * 8);
+  }
+
+  /* Gradient Text */
+  .text-gradient {
+    @apply text-transparent bg-clip-text bg-gradient-to-r;
   }
 
   /* Typography */
