@@ -24,9 +24,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      data-theme="dark"
+    >
       <body
-        className={`${poppins.variable} ${inter.variable} antialiased scroll-smooth selection:text-darkest selection:bg-theme-filling selection:text-theme-text`}
+        className={`${poppins.variable} ${inter.variable} antialiased scroll-smooth selection:text-darkest selection:bg-theme-filling selection:text-theme-copy bg-theme-background text-theme-heading`}
       >
         {children}
       </body>
