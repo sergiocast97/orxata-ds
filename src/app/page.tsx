@@ -2,11 +2,15 @@
 
 export default function Home() {
   return (
-    <div className="dark">
-      <div className="min-h-screen bg-theme-white dark:bg-theme-darkest">
-        <div className="flex flex-col gap-8 xl:gap-16 xl:flex-col text-theme-darkest dark:text-theme-white">
+    <div
+      className=""
+      data-theme="dark"
+    >
+      <div className="min-h-screen bg-theme-background">
+        {/* Typography */}
+        <div className="container flex flex-col gap-8 xl:gap-16 xl:flex-col text-theme-heading">
           <div className="flex flex-col gap-2">
-            <div className="mb-6 text-2xl font-bold md:text-4xl font-heading ">
+            <div className="mb-6 text-2xl font-bold md:text-4xl font-heading rounded-theme-md">
               Headings:
               <span className="font-bold">Poppins</span>
             </div>
@@ -49,6 +53,90 @@ export default function Home() {
                 <p className="font-bold body-md ">Bold md - 16px</p>
                 <p className="font-bold body-sm ">Bold sm - 14px</p>
                 <p className="font-bold body-xs ">Bold xs - 12px</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Colour Palete */}
+
+        <div className="container flex flex-col gap-4 md:gap-6 lg:gap-8">
+          <div className="flex flex-col gap-4">
+            <h3 className="h5 text-darkest theme-dark:text-white">
+              Colour Palette
+            </h3>
+
+            <div className="flex flex-wrap gap-4 md:gap-4 lg:gap-8">
+              <div className="flex flex-col gap-1">
+                <div className="border size-20 md:size-24 lg:size-32 border-light/50 theme-dark:border-medium/50 rounded bg-theme-heading">
+                  <span className="grid w-full h-full text-xs font-semibold transition opacity-0 hover:opacity-100 cursor-copy md:text-sm xl:text-base shade-copy place-items-center text-white">
+                    #262a62
+                  </span>
+                </div>
+
+                <span className="font-semibold body-xs md:body-sm lg:body-md text-dark theme-dark:text-lightest">
+                  Darkest{' '}
+                </span>
+              </div>
+
+              <div className="flex flex-col gap-1">
+                <div className="border size-20 md:size-24 lg:size-32 border-light/50 theme-dark:border-medium/50 rounded bg-theme-text">
+                  <span className="grid w-full h-full text-xs font-semibold transition opacity-0 hover:opacity-100 cursor-copy md:text-sm xl:text-base shade-copy place-items-center text-white">
+                    #284173
+                  </span>
+                </div>
+
+                <span className="font-semibold body-xs md:body-sm lg:body-md text-dark theme-dark:text-lightest">
+                  Dark{' '}
+                </span>
+              </div>
+
+              <div className="flex flex-col gap-1">
+                <div className="border size-20 md:size-24 lg:size-32 border-light/50 theme-dark:border-medium/50 rounded bg-theme-strong">
+                  <span className="grid w-full h-full text-xs font-semibold transition opacity-0 hover:opacity-100 cursor-copy md:text-sm xl:text-base shade-copy place-items-center text-white">
+                    #748EB2
+                  </span>
+                </div>
+
+                <span className="font-semibold body-xs md:body-sm lg:body-md text-dark theme-dark:text-lightest">
+                  Medium{' '}
+                </span>
+              </div>
+
+              <div className="flex flex-col gap-1">
+                <div className="border size-20 md:size-24 lg:size-32 border-light/50 theme-dark:border-medium/50 rounded bg-theme-weak">
+                  <span className="grid w-full h-full text-xs font-semibold transition opacity-0 hover:opacity-100 cursor-copy md:text-sm xl:text-base shade-copy place-items-center text-darkest">
+                    #D9DBED
+                  </span>
+                </div>
+
+                <span className="font-semibold body-xs md:body-sm lg:body-md text-dark theme-dark:text-lightest">
+                  Light{' '}
+                </span>
+              </div>
+
+              <div className="flex flex-col gap-1">
+                <div className="border size-20 md:size-24 lg:size-32 border-light/50 theme-dark:border-medium/50 rounded bg-theme-filling">
+                  <span className="grid w-full h-full text-xs font-semibold transition opacity-0 hover:opacity-100 cursor-copy md:text-sm xl:text-base shade-copy place-items-center text-darkest">
+                    #EBEEFF
+                  </span>
+                </div>
+
+                <span className="font-semibold body-xs md:body-sm lg:body-md text-dark theme-dark:text-lightest">
+                  Lightest{' '}
+                </span>
+              </div>
+
+              <div className="flex flex-col gap-1">
+                <div className="border size-20 md:size-24 lg:size-32 border-light/50 theme-dark:border-medium/50 rounded bg-theme-background">
+                  <span className="grid w-full h-full text-xs font-semibold transition opacity-0 hover:opacity-100 cursor-copy md:text-sm xl:text-base shade-copy place-items-center text-darkest">
+                    #FFFFFF
+                  </span>
+                </div>
+
+                <span className="font-semibold body-xs md:body-sm lg:body-md text-dark theme-dark:text-lightest">
+                  White{' '}
+                </span>
               </div>
             </div>
           </div>
