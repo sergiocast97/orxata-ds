@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-@custom-variant dark (&:is(.dark *));
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --font-*: initial;
@@ -13,4 +13,43 @@
   --color-theme-light: #a1a1aa;
   --color-theme-lightest: #d4d4d8;
   --color-theme-white: #ffffff;
+}
+
+@layer base {
+  /* Headings */
+  .head-h1 {
+    @apply font-heading font-bold leading-none text-[3rem] lg:text-[4rem];
+  }
+  .head-h2 {
+    @apply font-heading font-semibold leading-tight text-[2.25rem] md:text-[3rem];
+  }
+  .head-h3 {
+    @apply font-heading font-semibold leading-tight text-[1.875rem] md:text-[2.25rem];
+  }
+  .head-h4 {
+    @apply font-heading font-semibold leading-tight text-[1.5rem] md:text-[1.875rem];
+  }
+  .head-h5 {
+    @apply font-heading font-semibold leading-tight text-[1.25rem] md:text-[1.5rem];
+  }
+
+  /* Body */
+  .body-2xl {
+    @apply font-sans font-normal leading-loose text-[1.5rem];
+  }
+  .body-xl {
+    @apply font-sans font-normal leading-loose text-[1.25rem];
+  }
+  .body-lg {
+    @apply font-sans font-normal leading-loose text-[1.125rem];
+  }
+  .body-md {
+    @apply font-sans font-normal leading-loose text-[1rem];
+  }
+  .body-sm {
+    @apply font-sans font-normal leading-loose text-[0.875rem];
+  }
+  .body-xs {
+    @apply font-sans font-normal leading-loose text-[0.75rem];
+  }
 }
