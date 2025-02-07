@@ -1,5 +1,23 @@
 @import 'tailwindcss';
 
+@layer base {
+  :root {
+    /* Neutral Colour Palette */
+    --palette-neutral-000: #ffffff;
+    --palette-neutral-050: #fafbff;
+    --palette-neutral-100: #edeffa;
+    --palette-neutral-200: #e6e8f7;
+    --palette-neutral-300: #daddf2;
+    --palette-neutral-400: #959bbf;
+    --palette-neutral-500: #757a9e;
+    --palette-neutral-600: #484c6b;
+    --palette-neutral-700: #343854;
+    --palette-neutral-800: #232740;
+    --palette-neutral-900: #171a2e;
+    --palette-neutral-950: #0d0e1a;
+  }
+}
+
 @theme {
   /* Fonts */
   --font-*: initial;
@@ -12,24 +30,24 @@
   --radius-theme-lg: var(--radius-lg);
 
   /* Colour Palette */
-  --color-theme-heading: #18181b;
-  --color-theme-copy: #27272a;
-  --color-theme-strong: #52525b;
-  --color-theme-weak: #a1a1aa;
-  --color-theme-filling: #d4d4d8;
-  --color-theme-background: #ffffff;
+  --color-theme-heading: var(--palette-neutral-900);
+  --color-theme-copy: var(--palette-neutral-600);
+  --color-theme-strong: var(--palette-neutral-500);
+  --color-theme-weak: var(--palette-neutral-200);
+  --color-theme-filling: var(--palette-neutral-050);
+  --color-theme-background: var(--palette-neutral-000);
   --color-theme-primary: var(--color-indigo-500);
 }
 
 @layer base {
   [data-theme='dark'] {
     /* Colour Palette */
-    --color-theme-heading: #ffffff;
-    --color-theme-copy: #d4d4d8;
-    --color-theme-strong: #a1a1aa;
-    --color-theme-weak: #52525b;
-    --color-theme-filling: #27272a;
-    --color-theme-background: #18181b;
+    --color-theme-heading: var(--palette-neutral-000);
+    --color-theme-copy: var(--palette-neutral-300);
+    --color-theme-strong: var(--palette-neutral-400);
+    --color-theme-weak: var(--palette-neutral-500);
+    --color-theme-filling: var(--palette-neutral-800);
+    --color-theme-background: var(--palette-neutral-900);
   }
 }
 
