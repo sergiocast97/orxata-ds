@@ -36,7 +36,7 @@
   --color-theme-weak: var(--palette-neutral-200);
   --color-theme-filling: var(--palette-neutral-050);
   --color-theme-background: var(--palette-neutral-000);
-  --color-theme-primary: var(--color-indigo-500);
+  --color-theme-primary: var(--color-indigo-300);
 }
 
 @layer base {
@@ -96,5 +96,65 @@
   }
   .body-xs {
     @apply font-sans leading-normal text-[0.75rem];
+  }
+}
+
+@layer components {
+  .btn {
+    /* Basic Classes */
+    @apply block w-auto text-center transition rounded-theme-lg sm:inline-block focus:outline-0;
+
+    /* Sizing */
+    &.btn-sm {
+      @apply px-2 py-1 text-sm;
+    }
+    &.btn-md {
+      @apply px-4 py-2 text-base;
+    }
+    &.btn-lg {
+      @apply px-6 py-3 text-lg;
+    }
+
+    /* Filled Buttons */
+    &.btn-filled {
+      @apply font-bold border-none focus:ring-2 focus:border-none;
+
+      /* Colour
+            */
+      &.btn-neutral {
+        @apply text-theme-background bg-theme-primary focus:ring-theme-strong/25;
+      }
+      &.btn-light {
+        @apply text-theme-heading bg-theme-filling focus:ring-theme-strong/25;
+      }
+    }
+
+    /* Line Buttons */
+    &.btn-line {
+      @apply font-bold border-2 border-solid focus:ring-2 bg-none;
+
+      /* Colour
+            */
+      &.btn-neutral {
+        @apply bg-transparent text-theme-heading border-theme-heading focus:ring-theme-strong/25;
+      }
+      &.btn-light {
+        @apply bg-transparent text-theme-background border-theme-background focus:ring-theme-strong/25;
+      }
+    }
+
+    /* Link Buttons */
+    &.btn-link {
+      @apply p-0 font-semibold border-none focus:border-none;
+
+      /* Colour
+            */
+      &.btn-neutral {
+        @apply text-theme-heading hover:text-theme-copy active:text-theme-strong;
+      }
+      &.btn-light {
+        @apply text-theme-background hover:text-theme-weak active:text-theme-strong;
+      }
+    }
   }
 }
