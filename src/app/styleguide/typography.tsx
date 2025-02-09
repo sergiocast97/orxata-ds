@@ -27,13 +27,13 @@ export default function Typography() {
   return (
     <>
       <div className="container">
-        <div className="flex flex-wrap gap-4 md:gap-12">
+        <h2 className="mb-8 head-h2">Typography</h2>
+        <div className="flex flex-wrap gap-8 md:gap-12">
           {content.map((element, index) => {
             return (
               <div key={index}>
                 <h3 className="mb-6 head-h3">
-                  {element.name}:
-                  <span className="font-bold"> {element.fontName}</span>
+                  {element.name}: {element.fontName}
                 </h3>
 
                 <div className="space-y-2">
