@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Button from '../components/button';
+import Button from '../../components/button';
 
 export default function FeatureOneBlock() {
   const content = {
@@ -16,7 +16,7 @@ export default function FeatureOneBlock() {
     },
   };
   return (
-    <div className="container ">
+    <div className="container">
       <div className="grid grid-cols-1 md:grid-cols-2">
         {/* Text Area */}
         <div className="flex flex-col items-start justify-center">
