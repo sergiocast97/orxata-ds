@@ -11,7 +11,7 @@ export default function FeatureOneBlock() {
       text: 'Learn more',
     },
     image: {
-      url: 'https://dummyimage.com/640x480/98A2E7/1A1D33?text=',
+      url: 'https://dummyimage.com/640x480/1a1d33/8589A6?text=',
       alt: 'Image alt',
     },
   };
