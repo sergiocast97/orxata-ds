@@ -5,16 +5,16 @@
     /* Neutral Colour Palette */
     --palette-neutral-000: #ffffff;
     --palette-neutral-050: #fafbff;
-    --palette-neutral-100: #edeffa;
+    --palette-neutral-100: #f0f1fa;
     --palette-neutral-200: #e1e4f2;
-    --palette-neutral-300: #daddf2;
-    --palette-neutral-400: #959bbf;
+    --palette-neutral-300: #cacee5;
+    --palette-neutral-400: #9fa3bf;
     --palette-neutral-500: #8589a6;
     --palette-neutral-600: #474b66;
-    --palette-neutral-700: #343854;
-    --palette-neutral-800: #232740;
+    --palette-neutral-700: #3a3e59;
+    --palette-neutral-800: #2e324d;
     --palette-neutral-900: #1a1d33;
-    --palette-neutral-950: #0d0e1a;
+    --palette-neutral-950: #0b0d17;
   }
 }
 
@@ -36,8 +36,6 @@
   --color-theme-weak: var(--palette-neutral-200);
   --color-theme-filling: var(--palette-neutral-050);
   --color-theme-background: var(--palette-neutral-000);
-
-  --color-theme-primary: var(--color-slate-600);
 }
 
 @layer base {
@@ -45,8 +43,9 @@
     /* Colour Palette */
     --color-theme-heading: var(--palette-neutral-000);
     --color-theme-copy: var(--palette-neutral-300);
+
     --color-theme-strong: var(--palette-neutral-400);
-    --color-theme-weak: var(--palette-neutral-500);
+    --color-theme-weak: var(--palette-neutral-600);
     --color-theme-filling: var(--palette-neutral-800);
     --color-theme-background: var(--palette-neutral-900);
   }
@@ -125,7 +124,7 @@
       /* Colour
             */
       &.btn-neutral {
-        @apply text-theme-background bg-theme-primary focus:ring-theme-strong/25;
+        @apply text-theme-background bg-theme-filling focus:ring-theme-strong/25;
       }
       &.btn-light {
         @apply text-theme-heading bg-theme-filling focus:ring-theme-strong/25;

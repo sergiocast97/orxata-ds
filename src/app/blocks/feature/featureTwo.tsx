@@ -20,7 +20,7 @@ export default function FeatureTwoBlock() {
       <div className="grid grid-cols-1 border border-theme-weak bg-theme-filling rounded-theme-lg md:grid-cols-2">
         {/* Text Area */}
         <div className="flex flex-col items-start justify-center px-4 py-8 lg:px-8 lg:py-12">
-          <p className="mb-1 font-semibold body-md text-theme-primary">
+          <p className="mb-1 font-semibold body-md text-theme-strong">
             {content.byline}
           </p>
 

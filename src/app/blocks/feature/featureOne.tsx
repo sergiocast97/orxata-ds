@@ -20,7 +20,7 @@ export default function FeatureOneBlock() {
       <div className="grid grid-cols-1 md:grid-cols-2">
         {/* Text Area */}
         <div className="flex flex-col items-start justify-center">
-          <p className="mb-1 font-semibold body-md text-theme-primary">
+          <p className="mb-1 font-semibold body-md text-theme-strong">
             {content.byline}
           </p>
 
