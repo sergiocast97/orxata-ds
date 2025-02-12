@@ -7,10 +7,10 @@ export default function HeroThreeBlock() {
       <div className="container">
         <Image
           width="1312"
-          height="360"
-          src="https://dummyimage.com/1312x360/1a1d33/8589A6?text="
+          height="480"
+          src="https://hwhfyb8e9b.ufs.sh/f/E8jMENC68tjA4lvPTjxfshF9qjNVRickg0ZzuwdolY726EL5"
           alt="Hero image"
-          className="aspect-[4/1] w-full object-cover rounded-theme-lg"
+          className="aspect-[7/3] w-full object-cover rounded-theme-lg"
           loading="lazy"
         />
         <div className="grid grid-cols-1 lg:grid-cols-2 pt-8 gap-8">
