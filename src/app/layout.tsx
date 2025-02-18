@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Poppins, Inter } from 'next/font/google';
-import './globals.css';
+import '../assets/globals.css';
 
 const poppins = Poppins({
   variable: '--font-poppins',
@@ -24,10 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      data-theme="dark"
-    >
+    <html lang="en">
       <body
         className={`${poppins.variable} ${inter.variable} antialiased scroll-smooth selection:text-darkest selection:bg-theme-filling selection:text-theme-copy bg-theme-background text-theme-heading`}
       >

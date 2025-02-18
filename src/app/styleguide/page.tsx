@@ -1,7 +1,7 @@
 //import Image from 'next/image';
-import Typography from './typography';
-import ColourPalette from './colourPalette';
-import Iconography from './iconography';
+import Typography from './Typography';
+import ColourPalette from './ColourPalette';
+import Iconography from './Iconography';
 
 export default function Home() {
   return (
