@@ -18,7 +18,8 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({
   theme = "light",
   className = "",
 }) => {
-  const baseStyles = "inline-block transition focus:outline-0 text-lg font-semibold";
+  const baseStyles =
+    "inline-flex items-center gap-1 transition focus:outline-0 text-lg font-semibold";
   const typeStyles = {
     solid: clsx(
       theme === "dark"

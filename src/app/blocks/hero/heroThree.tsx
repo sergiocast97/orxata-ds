@@ -1,5 +1,6 @@
-import ButtonLink from '@/app/components/Button';
-import Image from 'next/image';
+import ButtonLink from "@/app/components/Button";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
 
 export default function HeroThreeBlock() {
   return (
@@ -15,25 +16,18 @@ export default function HeroThreeBlock() {
         />
         <div className="grid grid-cols-1 xl:grid-cols-2 pt-8 gap-8">
           <div className="flex flex-col items-start justify-center gap-1">
-            <p className="body-sm font-semibold text-theme-strong">
-              Lorem Ipsum dolor sit amet
-            </p>
+            <p className="body-sm font-semibold text-theme-strong">Lorem Ipsum dolor sit amet</p>
             <h1 className="head-h1 text-theme-heading text-balance">
               Impactful Headline about product
             </h1>
           </div>
           <div className="flex flex-col items-start justify-center gap-8">
             <p className="body-lg text-theme-copy max-w-[48ch]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              viverra eros bibendum sapien sagittis, ac efficitur felis
-              accumsan. Vivamus ut efficitur risus.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra eros bibendum
+              sapien sagittis, ac efficitur felis accumsan. Vivamus ut efficitur risus.
             </p>
-            <ButtonLink
-              href="#"
-              type="solid"
-              theme="light"
-            >
-              Hello
+            <ButtonLink href="#" type="solid" theme="light">
+              Learn more <ArrowRightIcon className="size-6" />
             </ButtonLink>
           </div>
         </div>
