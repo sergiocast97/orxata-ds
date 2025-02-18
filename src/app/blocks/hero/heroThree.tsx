@@ -1,4 +1,4 @@
-import Button from '@/app/components/button';
+import ButtonLink from '@/app/components/Button';
 import Image from 'next/image';
 
 export default function HeroThreeBlock() {
@@ -13,7 +13,7 @@ export default function HeroThreeBlock() {
           className="aspect-[7/3] w-full object-cover rounded-theme-lg"
           loading="lazy"
         />
-        <div className="grid grid-cols-1 lg:grid-cols-2 pt-8 gap-8">
+        <div className="grid grid-cols-1 xl:grid-cols-2 pt-8 gap-8">
           <div className="flex flex-col items-start justify-center gap-1">
             <p className="body-sm font-semibold text-theme-strong">
               Lorem Ipsum dolor sit amet
@@ -28,10 +28,13 @@ export default function HeroThreeBlock() {
               viverra eros bibendum sapien sagittis, ac efficitur felis
               accumsan. Vivamus ut efficitur risus.
             </p>
-            <Button
-              url="#"
-              text="Filled button"
-            />
+            <ButtonLink
+              href="#"
+              type="solid"
+              theme="light"
+            >
+              Hello
+            </ButtonLink>
           </div>
         </div>
       </div>

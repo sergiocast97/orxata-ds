@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Button from '../../components/button';
+import ButtonLink from '../../components/Button';
 
 export default function FeatureOneBlock() {
   const content = {
@@ -31,10 +31,13 @@ export default function FeatureOneBlock() {
           <div className="body-lg text-theme-heading">{content.copy}</div>
 
           <div className="mt-8">
-            <Button
-              url={content.cta.url}
-              text={content.cta.text}
-            />
+            <ButtonLink
+              href="#"
+              type="solid"
+              theme="dark"
+            >
+              Hello
+            </ButtonLink>
           </div>
         </div>
 
