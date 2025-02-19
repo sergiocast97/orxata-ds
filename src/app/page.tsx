@@ -1,3 +1,4 @@
+import FeatureOneBlock from "./blocks/feature/FeatureOne";
 import HeroThreeBlock from "./blocks/hero/HeroThree";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
           alt: "Hero Image",
         }}
       />
+      <FeatureOneBlock />
     </>
   );
 }

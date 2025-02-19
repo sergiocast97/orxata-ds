@@ -26,7 +26,7 @@ export default function HeroThreeBlock({
   img,
 }: HeroThreeBlockProps) {
   return (
-    <section data-theme="light">
+    <section data-theme="dark">
       <div className="bg-theme-000 dark:bg-theme-900 text-theme-900 dark:text-theme-000">
         <div className="container py-8 lg:pt-12 pb-24">
           <Image
@@ -52,7 +52,7 @@ export default function HeroThreeBlock({
               </p>
               <ButtonLink href={cta.url} type="solid" theme="dark">
                 {cta.text}
-                <ArrowRightIcon className="size-6" />
+                <ArrowRightIcon className="size-5" />
               </ButtonLink>
             </div>
           </div>
