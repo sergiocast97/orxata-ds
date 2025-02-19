@@ -22,19 +22,19 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({
     "inline-flex items-center gap-1 transition focus:outline-0 text-lg font-semibold";
   const typeStyles = {
     solid: clsx(
-      theme === "dark"
-        ? "px-4 py-2 rounded-xl bg-linear-to-b from-theme-900 to-theme-600 text-theme-000 btn-shadow active:to-theme-strong" // Dark
-        : "px-4 py-2 rounded-xl bg-linear-to-b from-theme-300 to-theme-000 text-theme-900 btn-shadow active:to-theme-strong" // Light
+      theme === "light"
+        ? "px-4 py-2 rounded-xl bg-linear-to-b from-theme-900 to-theme-600 text-theme-000 btn-shadow active:to-theme-strong" // Light
+        : "px-4 py-2 rounded-xl bg-linear-to-b from-theme-300 to-theme-000 text-theme-900 btn-shadow active:to-theme-strong" // Dark
     ),
     outline: clsx(
-      theme === "dark"
-        ? "px-4 py-2 rounded-xl border-2 border-theme-900 text-theme-900 active:border-theme-weak " // Dark
-        : "px-4 py-2 rounded-xl border-2 border-theme-000 text-theme-000 active:border-theme-weak " // Light
+      theme === "light"
+        ? "px-4 py-2 rounded-xl border-2 border-theme-900 text-theme-900 active:border-theme-weak " // Light
+        : "px-4 py-2 rounded-xl border-2 border-theme-000 text-theme-000 active:border-theme-weak " // Dark
     ),
     link: clsx(
-      theme === "dark"
-        ? "text-theme-900 active:text-theme-600 underline decoration-2 underline-offset-8 " // Dark
-        : "text-theme-000 active:text-theme-300 underline decoration-2 underline-offset-8 " // Light
+      theme === "light"
+        ? "text-theme-900 active:text-theme-600 underline decoration-2 underline-offset-8 " // Light
+        : "text-theme-000 active:text-theme-300 underline decoration-2 underline-offset-8 " // Dark
     ),
   };
 
