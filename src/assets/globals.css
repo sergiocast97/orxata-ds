@@ -1,22 +1,6 @@
 @import "tailwindcss";
 
-@layer base {
-  :root {
-    /* Neutral Colour Palette */
-    --palette-neutral-000: #ffffff;
-    --palette-neutral-050: #fafbff;
-    --palette-neutral-100: #f0f1fa;
-    --palette-neutral-200: #e1e4f2;
-    --palette-neutral-300: #cacee5;
-    --palette-neutral-400: #9fa3bf;
-    --palette-neutral-500: #8589a6;
-    --palette-neutral-600: #474b66;
-    --palette-neutral-700: #3a3e59;
-    --palette-neutral-800: #2e324d;
-    --palette-neutral-900: #1a1d33;
-    --palette-neutral-950: #0b0d17;
-  }
-}
+@custom-variant dark (&:where([data-theme="dark"] *));
 
 @theme {
   /* Fonts */
@@ -25,24 +9,18 @@
   --font-sans: Inter, Helvetica, sans-serif, system-ui;
 
   /* Colour Palette */
-  --color-theme-heading: var(--palette-neutral-900);
-  --color-theme-copy: var(--palette-neutral-600);
-  --color-theme-strong: var(--palette-neutral-500);
-  --color-theme-weak: var(--palette-neutral-200);
-  --color-theme-filling: var(--palette-neutral-050);
-  --color-theme-background: var(--palette-neutral-000);
-}
-
-@layer base {
-  [data-theme="dark"] {
-    /* Colour Palette */
-    --color-theme-heading: var(--palette-neutral-000);
-    --color-theme-copy: var(--palette-neutral-300);
-    --color-theme-strong: var(--palette-neutral-400);
-    --color-theme-weak: var(--palette-neutral-600);
-    --color-theme-filling: var(--palette-neutral-800);
-    --color-theme-background: var(--palette-neutral-900);
-  }
+  --color-theme-000: #ffffff; /* Light: Background, Dark: Heading Text */
+  --color-theme-050: #fafbff; /* Light: Foreground */
+  --color-theme-100: #f0f1fa;
+  --color-theme-200: #e1e4f2; /* Light: Weak Outline */
+  --color-theme-300: #cacee5; /* Dark: Copy Text */
+  --color-theme-400: #9fa3bf; /* Dark: Strong Outline */
+  --color-theme-500: #8589a6; /* Light: Strong Outline */
+  --color-theme-600: #474b66; /* Light: Copy Text, Dark: Weak Outline*/
+  --color-theme-700: #3a3e59;
+  --color-theme-800: #2e324d; /* Dark: Foreground */
+  --color-theme-900: #1a1d33; /* Light: Heading Text, Dark: Background */
+  --color-theme-950: #0b0d17;
 }
 
 @utility container {

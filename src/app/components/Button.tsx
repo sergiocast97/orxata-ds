@@ -23,18 +23,18 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({
   const typeStyles = {
     solid: clsx(
       theme === "dark"
-        ? "px-4 py-2 rounded-xl bg-linear-to-b from-theme-heading to-theme-copy text-theme-background btn-shadow active:to-theme-strong" // Dark
-        : "px-4 py-2 rounded-xl bg-linear-to-b from-theme-heading to-theme-copy text-theme-background btn-shadow active:to-theme-strong" // Light
+        ? "px-4 py-2 rounded-xl bg-linear-to-b from-theme-900 to-theme-600 text-theme-000 btn-shadow active:to-theme-strong" // Dark
+        : "px-4 py-2 rounded-xl bg-linear-to-b from-theme-300 to-theme-000 text-theme-900 btn-shadow active:to-theme-strong" // Light
     ),
     outline: clsx(
       theme === "dark"
-        ? "px-4 py-2 rounded-xl border-2 border-theme-heading text-theme-heading active:border-theme-weak " // Dark
-        : "px-4 py-2 rounded-xl border-2 border-theme-heading text-theme-heading active:border-theme-weak " // Light
+        ? "px-4 py-2 rounded-xl border-2 border-theme-900 text-theme-900 active:border-theme-weak " // Dark
+        : "px-4 py-2 rounded-xl border-2 border-theme-000 text-theme-000 active:border-theme-weak " // Light
     ),
     link: clsx(
       theme === "dark"
-        ? "text-theme-heading active:text-theme-weak underline decoration-2 underline-offset-4 " // Dark
-        : "text-theme-heading active:text-theme-weak underline decoration-2 underline-offset-4 " // Light
+        ? "text-theme-900 active:text-theme-600 underline decoration-2 underline-offset-8 " // Dark
+        : "text-theme-000 active:text-theme-300 underline decoration-2 underline-offset-8 " // Light
     ),
   };
 
