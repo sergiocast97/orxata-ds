@@ -1,8 +1,9 @@
-import ButtonLink from "@/app/components/Button";
+import ButtonLink from "@/app/components/ButtonLink";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
 interface HeroThreeBlockProps {
+  theme?: "light" | "dark";
   byline: string;
   headline: string;
   copy: string;
@@ -19,6 +20,7 @@ interface HeroThreeBlockProps {
 }
 
 export default function HeroThreeBlock({
+  theme = "dark",
   byline = "",
   headline = "",
   copy = "",
@@ -26,7 +28,7 @@ export default function HeroThreeBlock({
   img,
 }: HeroThreeBlockProps) {
   return (
-    <section data-theme="dark">
+    <section data-theme={theme}>
       <div className="bg-theme-000 dark:bg-theme-900 text-theme-900 dark:text-theme-000">
         <div className="container py-8 lg:pt-12 pb-24">
           <Image
@@ -50,7 +52,7 @@ export default function HeroThreeBlock({
               <p className="text-lg/relaxed text-theme-600 dark:text-theme-300 max-w-[48ch]">
                 {copy}
               </p>
-              <ButtonLink href={cta.url} type="solid" theme="dark">
+              <ButtonLink href={cta.url} type="solid" theme={theme}>
                 {cta.text}
                 <ArrowRightIcon className="size-5" />
               </ButtonLink>
