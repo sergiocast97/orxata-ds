@@ -9,17 +9,17 @@
   --font-sans: Inter, Helvetica, sans-serif, system-ui;
 
   /* Colour Palette */
-  --color-theme-000: #ffffff; /* Light: Background, Dark: Heading Text */
+  --color-theme-000: #ffffff; /* Light: Background, Dark: Text Heading */
   --color-theme-050: #fafbff; /* Light: Foreground */
   --color-theme-100: #f0f1fa;
-  --color-theme-200: #e1e4f2; /* Light: Weak Outline */
-  --color-theme-300: #cacee5; /* Dark: Copy Text */
-  --color-theme-400: #9fa3bf; /* Dark: Strong Outline */
-  --color-theme-500: #8589a6; /* Light: Strong Outline */
-  --color-theme-600: #474b66; /* Light: Copy Text, Dark: Weak Outline*/
+  --color-theme-200: #e1e4f2; /* Light: Stroke Weak */
+  --color-theme-300: #cacee5; /* Dark: Text Copy */
+  --color-theme-400: #9fa3bf; /* Dark: Stroke Strong */
+  --color-theme-500: #8589a6; /* Light: Stroke Strong */
+  --color-theme-600: #474b66; /* Light: Text Copy, Dark: Stroke Weak*/
   --color-theme-700: #3a3e59;
   --color-theme-800: #2e324d; /* Dark: Foreground */
-  --color-theme-900: #1a1d33; /* Light: Heading Text, Dark: Background */
+  --color-theme-900: #1a1d33; /* Light: Text Heading, Dark: Background */
   --color-theme-950: #0b0d17;
 }
 
