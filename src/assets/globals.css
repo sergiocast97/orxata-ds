@@ -23,6 +23,12 @@
   --color-theme-950: #0b0d17;
 }
 
+@layer base {
+  html {
+    background-color: var(--color-theme-900);
+  }
+}
+
 @utility container {
   margin-inline: auto;
   padding-inline: 1.5rem;
