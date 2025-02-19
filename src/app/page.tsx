@@ -1,10 +1,24 @@
 import FeatureOneBlock from "./blocks/feature/FeatureOne";
 import FeatureTwoBlock from "./blocks/feature/FeatureTwo";
+import HeroOneBlock from "./blocks/hero/HeroOne";
 import HeroThreeBlock from "./blocks/hero/HeroThree";
 
 export default function Home() {
   return (
     <>
+      <HeroOneBlock
+        theme="dark"
+        byline="Lorem ipsum dolor sit amet"
+        headline="Impactful Headline about Product"
+        copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra eros bibendum sapien sagittis, ac efficitur felis accumsan. Vivamus ut efficitur risus."
+        cta={{ text: "Learn more", url: "#" }}
+        img={{
+          width: 592,
+          height: 437,
+          url: "https://hwhfyb8e9b.ufs.sh/f/E8jMENC68tjA4lvPTjxfshF9qjNVRickg0ZzuwdolY726EL5",
+          alt: "Hero Image",
+        }}
+      />
       <HeroThreeBlock
         theme="dark"
         byline="Lorem ipsum dolor sit amet"
