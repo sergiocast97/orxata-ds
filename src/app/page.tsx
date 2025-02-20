@@ -1,11 +1,13 @@
-import FeatureOneBlock from "./blocks/feature/FeatureOne";
-import FeatureTwoBlock from "./blocks/feature/FeatureTwo";
-import HeroOneBlock from "./blocks/hero/HeroOne";
-import HeroTwoBlock from "./blocks/hero/HeroTwo";
-import HeroThreeBlock from "./blocks/hero/HeroThree";
 import NavigationOneBlock from "./blocks/navigation/NavigationOne";
 import NavigationTwoBlock from "./blocks/navigation/NavigationTwo";
 import NavigationThreeBlock from "./blocks/navigation/NavigationThree";
+import HeroOneBlock from "./blocks/hero/HeroOne";
+import HeroTwoBlock from "./blocks/hero/HeroTwo";
+import HeroThreeBlock from "./blocks/hero/HeroThree";
+import TextOneBlock from "./blocks/text/TextOne";
+import FeatureOneBlock from "./blocks/feature/FeatureOne";
+import FeatureTwoBlock from "./blocks/feature/FeatureTwo";
+import TextTwoBlock from "./blocks/text/TextTwo";
 
 export default function Home() {
   return (
@@ -55,6 +57,16 @@ export default function Home() {
           alt: "Hero Image",
         }}
       />
+
+      <TextOneBlock theme="dark" byline="Lorem ipsum dolor sit amet" headline="Text Block Title">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur risus ligula, malesuada
+        eget neque accio, condimentum pulvinar erat. Proin molestie varius urna non consectetur.
+      </TextOneBlock>
+
+      <TextTwoBlock theme="dark" byline="Lorem ipsum dolor sit amet" headline="Text Block Title">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur risus ligula, malesuada
+        eget neque accio, condimentum pulvinar erat. Proin molestie varius urna non consectetur.
+      </TextTwoBlock>
 
       <FeatureOneBlock
         byline="Lorem ipsum dolor sit"
