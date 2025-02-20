@@ -3,10 +3,17 @@ import FeatureTwoBlock from "./blocks/feature/FeatureTwo";
 import HeroOneBlock from "./blocks/hero/HeroOne";
 import HeroTwoBlock from "./blocks/hero/HeroTwo";
 import HeroThreeBlock from "./blocks/hero/HeroThree";
+import NavigationOneBlock from "./blocks/navigation/NavigationOne";
+import NavigationTwoBlock from "./blocks/navigation/NavigationTwo";
+import NavigationThreeBlock from "./blocks/navigation/NavigationThree";
 
 export default function Home() {
   return (
     <>
+      <NavigationOneBlock theme="dark" />
+      <NavigationTwoBlock theme="dark" />
+      <NavigationThreeBlock theme="dark" />
+
       <HeroOneBlock
         theme="dark"
         byline="Lorem ipsum dolor sit amet"
