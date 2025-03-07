@@ -18,23 +18,32 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({
   theme = "light",
   className = "",
 }) => {
+  // Button's base styles
   const baseStyles =
     "inline-flex items-center gap-1 transition focus:outline-0 text-lg font-semibold";
+
+  // Styles specific to button types
   const typeStyles = {
+    // Themed solid buttons
     solid: clsx(
+      "px-4 py-2 rounded-xl bg-linear-to-b btn-shadow active:to-theme-strong",
       theme === "light"
-        ? "px-4 py-2 rounded-xl bg-linear-to-b from-theme-900 to-theme-600 text-theme-000 btn-shadow active:to-theme-strong" // Light
-        : "px-4 py-2 rounded-xl bg-linear-to-b from-theme-300 to-theme-000 text-theme-900 btn-shadow active:to-theme-strong" // Dark
+        ? " from-theme-900 to-theme-600 text-theme-000 " // Light
+        : " from-theme-300 to-theme-000 text-theme-900", // Dark
     ),
+    // Themed outline buttons
     outline: clsx(
+      "px-4 py-2 rounded-xl border-2 active:border-theme-weak",
       theme === "light"
-        ? "px-4 py-2 rounded-xl border-2 border-theme-900 text-theme-900 active:border-theme-weak " // Light
-        : "px-4 py-2 rounded-xl border-2 border-theme-000 text-theme-000 active:border-theme-weak " // Dark
+        ? " border-theme-900 text-theme-900 " // Light
+        : " border-theme-000 text-theme-000 ", // Dark
     ),
+    // Themed link buttobs
     link: clsx(
+      "underline decoration-2 underline-offset-8",
       theme === "light"
-        ? "text-theme-900 active:text-theme-600 underline decoration-2 underline-offset-8 " // Light
-        : "text-theme-000 active:text-theme-300 underline decoration-2 underline-offset-8 " // Dark
+        ? "text-theme-900 active:text-theme-600 " // Light
+        : "text-theme-000 active:text-theme-300 ", // Dark
     ),
   };
 
@@ -42,6 +51,7 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({
     <Link
       href={href}
       target={newTab ? "_blank" : ""}
+      // Join base, type and custom classes
       className={clsx(baseStyles, typeStyles[type], className)}
     >
       {children}
