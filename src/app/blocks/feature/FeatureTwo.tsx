@@ -3,24 +3,6 @@ import ButtonLink from "../../components/ButtonLink";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import clsx from "clsx";
 
-interface FeatureTwoBlockProps {
-  theme?: "light" | "dark";
-  byline: string;
-  headline: string;
-  children: React.ReactNode;
-  mediaDirection?: "left" | "right";
-  cta: {
-    url: string;
-    text: string;
-  };
-  img: {
-    width: number;
-    height: number;
-    url: string;
-    alt: string;
-  };
-}
-
 export default function FeatureTwoBlock({
   theme = "dark",
   byline = "",
@@ -29,7 +11,7 @@ export default function FeatureTwoBlock({
   mediaDirection = "right",
   cta,
   img,
-}: FeatureTwoBlockProps) {
+}: FeatureBlock) {
   return (
     <section data-theme={theme}>
       <div className="bg-light-white dark:bg-dark-darkest">
@@ -61,8 +43,8 @@ export default function FeatureTwoBlock({
                 {children}
               </div>
               <div className="mt-4">
-                <ButtonLink href={cta.url} type="solid" theme="dark">
-                  {cta.text}
+                <ButtonLink href={cta.href} type="solid" theme="dark">
+                  {cta.children}
                   <ArrowRightIcon className="size-5" />
                 </ButtonLink>
               </div>

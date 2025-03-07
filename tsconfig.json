@@ -29,5 +29,6 @@
     ".next/types/**/*.ts",
     "src/app/blocks/feature"
   ],
+  "typeRoots": ["./types", "./node_modules/@types"],
   "exclude": ["node_modules"]
 }

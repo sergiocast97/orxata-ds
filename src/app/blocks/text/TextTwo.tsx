@@ -1,16 +1,9 @@
-interface TextTwoBlockProps {
-  theme?: "light" | "dark";
-  byline: string;
-  headline: string;
-  children: React.ReactNode;
-}
-
 export default function TextTwoBlock({
   theme = "dark",
   byline = "",
   headline,
   children,
-}: TextTwoBlockProps) {
+}: TextBlock) {
   return (
     <section data-theme={theme}>
       <div className="bg-light-white dark:bg-dark-darkest text-light-darkest dark:text-dark-white">

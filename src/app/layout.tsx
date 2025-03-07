@@ -14,8 +14,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Sergio's DS",
-  description: "Hell yeah brother",
+  title: "Orxata DS",
+  description: "Orxata Design System",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

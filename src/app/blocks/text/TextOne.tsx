@@ -1,16 +1,9 @@
-interface TextOneBlockProps {
-  theme?: "light" | "dark";
-  byline: string;
-  headline: string;
-  children: React.ReactNode;
-}
-
 export default function TextOneBlock({
   theme = "dark",
   byline = "",
   headline,
   children,
-}: TextOneBlockProps) {
+}: TextBlock) {
   return (
     <section data-theme={theme}>
       <div className="bg-light-white dark:bg-dark-darkest text-light-darkest dark:text-dark-white">

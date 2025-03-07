@@ -2,13 +2,9 @@ import ButtonLink from "@/app/components/ButtonLink";
 import Logo from "@/app/components/Logo";
 import NavItems from "@/app/patterns/NavItems";
 
-interface NavigationTwoBlockProps {
-  theme?: "light" | "dark";
-}
-
 export default function NavigationTwoBlock({
   theme = "dark",
-}: NavigationTwoBlockProps) {
+}: NavigationBlock) {
   return (
     <>
       <section data-theme={theme}>

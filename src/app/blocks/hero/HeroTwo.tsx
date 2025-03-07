@@ -1,22 +1,6 @@
 import ButtonLink from "@/app/components/ButtonLink";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
-interface HeroTwoBlockProps {
-  theme?: "light" | "dark";
-  byline: string;
-  headline: string;
-  copy: string;
-  cta: {
-    text: string;
-    url: string;
-  };
-  img: {
-    url: string;
-    alt: string;
-    width: number;
-    height: number;
-  };
-}
 
 export default function HeroTwoBlock({
   theme = "dark",
@@ -25,7 +9,7 @@ export default function HeroTwoBlock({
   copy = "",
   cta,
   img,
-}: HeroTwoBlockProps) {
+}: HeroBlock) {
   return (
     <section data-theme={theme}>
       <div className="bg-light-white dark:bg-dark-darkest text-light-darkest dark:text-dark-white">
@@ -43,8 +27,8 @@ export default function HeroTwoBlock({
               </p>
 
               <div className="mt-6">
-                <ButtonLink href={cta.url} type="solid" theme={theme}>
-                  {cta.text}
+                <ButtonLink href={cta.href} type="solid" theme={theme}>
+                  {cta.children}
                   <ArrowRightIcon className="size-5" />
                 </ButtonLink>
               </div>

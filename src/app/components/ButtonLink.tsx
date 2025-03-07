@@ -1,16 +1,7 @@
 import Link from "next/link";
 import clsx from "clsx";
 
-interface ButtonLinkProps {
-  children: React.ReactNode; // Button Content
-  href: string; // URL
-  newTab?: boolean; // Opens in new tab?
-  type?: "solid" | "outline" | "link"; // Button type
-  theme?: "light" | "dark"; // Colour theme
-  className?: string; // Optional classes
-}
-
-const ButtonLink: React.FC<ButtonLinkProps> = ({
+const ButtonLink: React.FC<ButtonLink> = ({
   children,
   href,
   newTab = false,

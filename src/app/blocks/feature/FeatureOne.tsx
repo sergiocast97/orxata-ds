@@ -3,24 +3,6 @@ import ButtonLink from "../../components/ButtonLink";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import clsx from "clsx";
 
-interface FeatureOneBlockProps {
-  theme?: "light" | "dark";
-  byline: string;
-  headline: string;
-  children: React.ReactNode;
-  mediaDirection?: "left" | "right";
-  cta: {
-    url: string;
-    text: string;
-  };
-  img: {
-    width: number;
-    height: number;
-    url: string;
-    alt: string;
-  };
-}
-
 export default function FeatureOneBlock({
   theme = "dark",
   byline = "",
@@ -29,7 +11,7 @@ export default function FeatureOneBlock({
   mediaDirection = "right",
   cta,
   img,
-}: FeatureOneBlockProps) {
+}: FeatureBlock) {
   return (
     <section data-theme={theme}>
       <div className="bg-light-white dark:bg-dark-darkest text-light-darkest dark:text-dark-white">
@@ -61,8 +43,8 @@ export default function FeatureOneBlock({
                 {children}
               </div>
               <div className="mt-4">
-                <ButtonLink href={cta.url} type="link" theme={theme}>
-                  {cta.text}
+                <ButtonLink href={cta.href} type="link" theme={theme}>
+                  {cta.children}
                   <ArrowRightIcon className="size-5" />
                 </ButtonLink>
               </div>

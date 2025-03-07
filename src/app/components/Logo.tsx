@@ -1,7 +1,4 @@
-interface LogoProps {
-  theme?: "light" | "dark";
-}
-const Logo = ({ theme = "dark" }: LogoProps) => (
+const Logo = ({ theme = "dark" }: { theme?: Theme }) => (
   <div className="flex gap-4">
     <svg
       className={`h-8 w-auto ${theme === "dark" ? "text-dark-white" : "text-light-darkest"}`}

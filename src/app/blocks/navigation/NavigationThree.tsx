@@ -2,13 +2,9 @@ import ButtonLink from "@/app/components/ButtonLink";
 import Logo from "@/app/components/Logo";
 import NavItems from "@/app/patterns/NavItems";
 
-interface NavigationThreeBlockProps {
-  theme?: "light" | "dark";
-}
-
 export default function NavigationThreeBlock({
   theme = "dark",
-}: NavigationThreeBlockProps) {
+}: NavigationBlock) {
   return (
     <>
       <section data-theme={theme}>
