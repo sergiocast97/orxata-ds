@@ -34,11 +34,11 @@ export default function FeatureOneBlock({
     <section data-theme={theme}>
       <div className="bg-theme-000 dark:bg-theme-900 text-theme-900 dark:text-theme-000">
         <div className="container py-8 lg:py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-5xl gap-6 xl:gap-8">
+          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 xl:gap-8">
             <div
               className={clsx(
                 mediaDirection == "left" ? "order-first" : "order-last",
-                "order h-full"
+                "order h-full",
               )}
             >
               <Image
@@ -46,16 +46,16 @@ export default function FeatureOneBlock({
                 height={img.height}
                 src={img.url}
                 alt={img.alt}
-                className="min-h-full aspect-[4/3] w-full object-cover rounded-2xl"
+                className="aspect-[4/3] min-h-full w-full rounded-2xl object-cover"
                 loading="lazy"
               />
             </div>
             <div className="flex flex-col items-start justify-center">
-              <p className="mb-1 font-semibold text-lg text-theme-600 dark:text-theme-300">
+              <p className="text-theme-600 dark:text-theme-300 mb-1 text-lg font-semibold">
                 {byline}
               </p>
-              <h2 className="font-heading font-bold text-4xl mb-2">{headline}</h2>
-              <div className="text-lg/relaxed text-theme-600 dark:text-theme-300 ">{children}</div>
+              <h2 className="font-heading mb-2 text-4xl font-bold">{headline}</h2>
+              <div className="text-theme-600 dark:text-theme-300 text-lg/relaxed">{children}</div>
               <div className="mt-4">
                 <ButtonLink href={cta.url} type="solid" theme={theme}>
                   {cta.text}
