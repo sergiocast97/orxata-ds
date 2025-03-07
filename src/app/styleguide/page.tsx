@@ -123,13 +123,17 @@ export default function Home() {
           hendrerit sem.
         </FeatureTwoBlock>
         <CardOneBlock
-          byline="Lorem ipsum dolor sit"
-          headline="Card Block Title"
-          copy="Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec sem, dapibus ac abc arcu. Vivamus erat massa, posuere ame viverra."
-          ctas={[
-            { href: "#", children: "Learn more" },
-            { href: "#", children: "Learn more" },
-          ]}
+          theme="light"
+          blockHeading={{
+            byline: "Lorem ipsum dolor sit",
+            headline: "Card Block Title",
+            copy: "Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec sem, dapibus ac arcu. Vivamus erat massa, posuere ame viverra.",
+            ctas: [
+              { href: "#", children: "Learn more" },
+              { href: "#", children: "Learn more" },
+            ],
+          }}
+          cards={[{}, {}, {}]}
         />
       </>
     </>

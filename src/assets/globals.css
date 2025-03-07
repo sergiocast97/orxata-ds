@@ -37,6 +37,10 @@
   --color-dark-light: var(--color-neutral-400); /* Stroke Strong */
   --color-dark-lightest: var(--color-neutral-300); /* Text Copy */
   --color-dark-white: var(--color-neutral-000); /* Text Heading */
+
+  --radius-small: 4px;
+  --radius-medium: 8px;
+  --radius-large: 16px;
 }
 
 @utility container {

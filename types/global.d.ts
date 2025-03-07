@@ -6,6 +6,14 @@ declare global {
   // Themes
   type Theme = "light" | "dark";
 
+  // Image
+  interface Image {
+    url: string;
+    alt: string;
+    width: number;
+    height: number;
+  }
+
   // Button Link Props
   interface ButtonLink {
     children: React.ReactNode; // Button Content
@@ -19,53 +27,18 @@ declare global {
   // Button Link List
   type ButtonLinkList = Array<ButtonLink>;
 
-  // Navigation Block
-  interface NavigationBlock {
+  // Navigation
+  interface Navigation {
+    theme?: Theme;
+  }
+
+  // Footer
+  interface Footer {
     theme?: Theme;
   }
 
   // Block Heading Props
   interface BlockHeading {
-    theme: Theme;
-    byline: string;
-    headline: string;
-    copy: string;
-    ctas: ButtonLinkList;
-  }
-
-  // Hero Block
-  interface HeroBlock {
-    theme?: Theme;
-    byline: string;
-    headline: string;
-    copy: string;
-    cta: ButtonLink;
-    img: {
-      url: string;
-      alt: string;
-      width: number;
-      height: number;
-    };
-  }
-
-  // Feature Block
-  interface FeatureBlock {
-    theme?: Theme;
-    byline: string;
-    headline: string;
-    children: React.ReactNode;
-    mediaDirection?: "left" | "right";
-    cta: ButtonLink;
-    img: {
-      width: number;
-      height: number;
-      url: string;
-      alt: string;
-    };
-  }
-
-  // Card Block
-  interface CardBlock {
     theme?: Theme;
     byline: string;
     headline: string;
@@ -79,5 +52,54 @@ declare global {
     byline: string;
     headline: string;
     children: React.ReactNode;
+  }
+
+  // Hero Block
+  interface HeroBlock {
+    theme?: Theme;
+    byline: string;
+    headline: string;
+    copy: string;
+    cta: ButtonLink;
+    img: Image;
+  }
+
+  // Feature Block
+  interface FeatureBlock {
+    theme?: Theme;
+    byline: string;
+    headline: string;
+    children: React.ReactNode;
+    mediaDirection?: "left" | "right";
+    cta: ButtonLink;
+    img: Image;
+  }
+
+  interface Card {
+    img: Image;
+    headline: string;
+    copy: string;
+    cta: ButtonLink;
+  }
+
+  // Card Block
+  interface CardBlock {
+    theme?: Theme;
+    blockHeading: BlockHeading;
+    cards: Array<Card>;
+  }
+
+  // List Item
+  interface ListItem {
+    icon: string;
+    headline: string;
+    copy: string;
+  }
+
+  // List Block
+  interface ListBlock {
+    theme?: Theme;
+    BlockHeading: BlockHeading;
+    list: Array<ListItem>;
   }
 }
