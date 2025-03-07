@@ -6,11 +6,13 @@ interface NavigationTwoBlockProps {
   theme?: "light" | "dark";
 }
 
-export default function NavigationTwoBlock({ theme = "dark" }: NavigationTwoBlockProps) {
+export default function NavigationTwoBlock({
+  theme = "dark",
+}: NavigationTwoBlockProps) {
   return (
     <>
       <section data-theme={theme}>
-        <div className="bg-theme-000 dark:bg-theme-900 text-theme-900 dark:text-theme-000">
+        <div className="bg-light-white dark:bg-dark-darkest text-light-darkest dark:text-dark-white">
           <div className="container py-8 lg:pt-12">
             <div className="flex items-center justify-between gap-8">
               <Logo theme={theme} />

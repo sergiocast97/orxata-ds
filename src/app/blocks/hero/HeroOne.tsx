@@ -29,27 +29,27 @@ export default function HeroOneBlock({
 }: HeroOneBlockProps) {
   return (
     <section data-theme={theme}>
-      <div className="bg-theme-000 dark:bg-theme-900 text-theme-900 dark:text-theme-000">
-        <div className="container py-8 lg:pt-12 pb-24">
+      <div className="bg-light-white dark:bg-dark-darkest text-light-darkest dark:text-dark-white">
+        <div className="container py-8 pb-24 lg:pt-12">
           <Image
             width={img.width}
             height={img.height}
             src={img.url}
             alt={img.alt}
-            className="aspect-[3/2] sm:aspect-[2/1] lg:aspect-[3.25/1] w-full object-cover rounded-2xl"
+            className="aspect-[3/2] w-full rounded-2xl object-cover sm:aspect-[2/1] lg:aspect-[3.25/1]"
             loading="lazy"
           />
-          <div className="grid grid-cols-1 lg:grid-cols-2 pt-6 xl:pt-8 gap-4 lg:gap-6 xl:gap-8">
+          <div className="grid grid-cols-1 gap-4 pt-6 lg:grid-cols-2 lg:gap-6 xl:gap-8 xl:pt-8">
             <div className="flex flex-col items-start justify-center gap-1">
-              <p className="text-lg/relaxed font-semibold text-theme-strong text-theme-600 dark:text-theme-300">
+              <p className="text-light-dark dark:text-dark-lightest text-lg/relaxed font-semibold">
                 {byline}
               </p>
-              <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-balance">
+              <h1 className="font-heading text-4xl font-bold text-balance md:text-5xl lg:text-6xl">
                 {headline}
               </h1>
             </div>
             <div className="flex flex-col items-start justify-center gap-6">
-              <p className="text-lg/relaxed text-theme-600 dark:text-theme-300 max-w-[48ch]">
+              <p className="text-light-dark dark:text-dark-lightest max-w-[48ch] text-lg/relaxed">
                 {copy}
               </p>
               <ButtonLink href={cta.url} type="solid" theme={theme}>

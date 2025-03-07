@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${inter.variable} antialiased scroll-smooth selection:text-theme-800 selection:bg-theme-200`}
+        className={`${poppins.variable} ${inter.variable} selection:text-light-dark selection:bg-light-light scroll-smooth antialiased`}
       >
         {children}
       </body>

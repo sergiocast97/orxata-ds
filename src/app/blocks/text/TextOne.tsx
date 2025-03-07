@@ -13,17 +13,17 @@ export default function TextOneBlock({
 }: TextOneBlockProps) {
   return (
     <section data-theme={theme}>
-      <div className="bg-theme-000 dark:bg-theme-900 text-theme-900 dark:text-theme-000">
+      <div className="bg-light-white dark:bg-dark-darkest text-light-darkest dark:text-dark-white">
         <div className="container py-8 lg:py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-5xl gap-4 lg:gap-6 xl:gap-8">
+          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-4 md:grid-cols-2 lg:gap-6 xl:gap-8">
             <div>
-              <p className="mb-1 font-semibold text-lg text-theme-600 dark:text-theme-300">
+              <p className="text-light-dark dark:text-dark-lightest mb-1 text-lg font-semibold">
                 {byline}
               </p>
-              <h2 className="text-5xl font-bold font-heading">{headline}</h2>
+              <h2 className="font-heading text-5xl font-bold">{headline}</h2>
             </div>
             <div>
-              <p className="md:mt-0 text-lg/relaxed lg:text-xl text-theme-600 dark:text-theme-300 max-w-[50ch]">
+              <p className="text-light-dark dark:text-dark-lightest max-w-[50ch] text-lg/relaxed md:mt-0 lg:text-xl">
                 {children}
               </p>
             </div>

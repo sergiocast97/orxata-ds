@@ -8,12 +8,12 @@ export default function NavItems() {
     { name: "About", url: "#" },
   ];
   return (
-    <nav className="hidden md:flex gap-6 lg:gap-8">
+    <nav className="hidden gap-6 md:flex lg:gap-8">
       {items.map((item) => (
         <Link
           key={item.name}
           href={item.url}
-          className="text-lg font-semibold text-theme-900 dark:text-theme-000"
+          className="text-light-darkest dark:text-dark-white text-lg font-semibold"
         >
           {item.name}
         </Link>

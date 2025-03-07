@@ -6,8 +6,8 @@ import Iconography from "./Iconography";
 export default function Home() {
   return (
     <section data-theme="dark">
-      <div className="bg-theme-000 dark:bg-theme-900 text-theme-900 dark:text-theme-000">
-        <div className="container py-8 lg:pt-12 pb-24 space-y-16">
+      <div className="bg-light-white dark:bg-dark-darkest text-light-darkest dark:text-dark-white">
+        <div className="container space-y-16 py-8 pb-24 lg:pt-12">
           <Typography />
           <ColourPalette />
           <Iconography />

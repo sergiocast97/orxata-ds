@@ -6,14 +6,16 @@ interface NavigationThreeBlockProps {
   theme?: "light" | "dark";
 }
 
-export default function NavigationThreeBlock({ theme = "dark" }: NavigationThreeBlockProps) {
+export default function NavigationThreeBlock({
+  theme = "dark",
+}: NavigationThreeBlockProps) {
   return (
     <>
       <section data-theme={theme}>
-        <div className="bg-theme-000 dark:bg-theme-900 text-theme-900 dark:text-theme-000">
+        <div className="bg-light-white dark:bg-dark-darkest text-light-darkest dark:text-dark-white">
           <div className="container py-8 lg:pt-12">
             <div className="flex items-center justify-between gap-8">
-              <div className="flex justify-start items-center gap-8 lg:gap-12">
+              <div className="flex items-center justify-start gap-8 lg:gap-12">
                 <Logo theme={theme} />
                 <NavItems />
               </div>

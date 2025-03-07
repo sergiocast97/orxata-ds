@@ -29,26 +29,26 @@ export default function HeroThreeBlock({
 }: HeroThreeBlockProps) {
   return (
     <section data-theme={theme}>
-      <div className="bg-theme-000 dark:bg-theme-900 text-theme-900 dark:text-theme-000">
-        <div className="container py-8 lg:pt-12 pb-24">
-          <div className="flex flex-col items-center justify-center gap-12 text-center max-w-5xl mx-auto">
+      <div className="bg-light-white dark:bg-dark-darkest text-light-darkest dark:text-dark-white">
+        <div className="container py-8 pb-24 lg:pt-12">
+          <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-12 text-center">
             <Image
               width={img.width}
               height={img.height}
               src={img.url}
               alt={img.alt}
-              className="aspect-[3/2] sm:aspect-[2/1] lg:aspect-[5/2] w-full object-cover rounded-2xl"
+              className="aspect-[3/2] w-full rounded-2xl object-cover sm:aspect-[2/1] lg:aspect-[5/2]"
               loading="lazy"
             />
 
-            <div className="flex flex-col items-center justify-center mx-auto max-w-2xl">
-              <p className="text-lg/relaxed font-semibold text-theme-strong text-theme-600 dark:text-theme-300 mb-1">
+            <div className="mx-auto flex max-w-2xl flex-col items-center justify-center">
+              <p className="text-light-dark dark:text-dark-lightest mb-1 text-lg/relaxed font-semibold">
                 {byline}
               </p>
-              <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-balance">
+              <h1 className="font-heading text-4xl font-bold text-balance md:text-5xl lg:text-6xl">
                 {headline}
               </h1>
-              <p className="mt-4 text-lg/relaxed text-theme-600 dark:text-theme-300 max-w-[48ch]">
+              <p className="text-light-dark dark:text-dark-lightest mt-4 max-w-[48ch] text-lg/relaxed">
                 {copy}
               </p>
               <div className="mt-6">
