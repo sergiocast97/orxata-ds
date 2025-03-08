@@ -12,7 +12,7 @@ export default function NavigationOneBlock({ theme = "dark" }: { theme: Theme })
               <Logo theme={theme} />
               <div className="flex items-baseline justify-end gap-8 lg:gap-12">
                 <NavItems />
-                <div className="flex items-baseline gap-6 lg:gap-8">
+                <div className="hidden items-baseline gap-6 md:flex lg:gap-8">
                   <ButtonLink href="#" type="link" theme={theme}>
                     Login
                   </ButtonLink>

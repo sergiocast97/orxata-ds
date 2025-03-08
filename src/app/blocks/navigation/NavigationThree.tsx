@@ -13,7 +13,7 @@ export default function NavigationThreeBlock({ theme = "dark" }: { theme: Theme 
                 <Logo theme={theme} />
                 <NavItems />
               </div>
-              <div className="flex items-baseline gap-6 lg:gap-8">
+              <div className="hidden items-baseline gap-6 md:flex lg:gap-8">
                 <ButtonLink href="#" type="link" theme={theme}>
                   Login
                 </ButtonLink>

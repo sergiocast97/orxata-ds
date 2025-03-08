@@ -8,6 +8,7 @@ export default function CardOneBlock({ theme = "dark", heading, cards }: CardBlo
         <div className="container py-8 lg:py-12">
           <Heading
             theme={theme}
+            centered={false}
             byline={heading.byline}
             headline={heading.headline}
             copy={heading.copy}

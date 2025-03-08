@@ -11,7 +11,7 @@ export default function NavigationTwoBlock({ theme = "dark" }: { theme: Theme })
             <div className="flex items-center justify-between gap-8">
               <Logo theme={theme} />
               <NavItems />
-              <div className="flex items-baseline gap-6 lg:gap-8">
+              <div className="hidden items-baseline gap-6 md:flex lg:gap-8">
                 <ButtonLink href="#" type="link" theme={theme}>
                   Login
                 </ButtonLink>

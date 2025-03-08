@@ -3,17 +3,18 @@ import Typography from "./Typography";
 import ColourPalette from "./ColourPalette";
 import Iconography from "./Iconography";
 
-import NavigationOneBlock from "../blocks/navigation/NavigationOne";
-import NavigationTwoBlock from "../blocks/navigation/NavigationTwo";
-import NavigationThreeBlock from "../blocks/navigation/NavigationThree";
-import HeroOneBlock from "../blocks/hero/HeroOne";
-import HeroTwoBlock from "../blocks/hero/HeroTwo";
-import HeroThreeBlock from "../blocks/hero/HeroThree";
-import TextOneBlock from "../blocks/text/TextOne";
-import FeatureOneBlock from "../blocks/feature/FeatureOne";
-import FeatureTwoBlock from "../blocks/feature/FeatureTwo";
-import TextTwoBlock from "../blocks/text/TextTwo";
-import CardOneBlock from "../blocks/card/CardOne";
+import NavigationOneBlock from "@/app/blocks/navigation/NavigationOne";
+import NavigationTwoBlock from "@/app/blocks/navigation/NavigationTwo";
+import NavigationThreeBlock from "@/app/blocks/navigation/NavigationThree";
+import HeroOneBlock from "@/app/blocks/hero/HeroOne";
+import HeroTwoBlock from "@/app/blocks/hero/HeroTwo";
+import HeroThreeBlock from "@/app/blocks/hero/HeroThree";
+import TextOneBlock from "@/app/blocks/text/TextOne";
+import FeatureOneBlock from "@/app/blocks/feature/FeatureOne";
+import FeatureTwoBlock from "@/app/blocks/feature/FeatureTwo";
+import TextTwoBlock from "@/app/blocks/text/TextTwo";
+import CardOneBlock from "@/app/blocks/card/CardOne";
+import CardTwoBlock from "@/app/blocks/card/CardTwo";
 
 export default function Home() {
   return (
@@ -122,6 +123,68 @@ export default function Home() {
             ],
           }}
           cards={[
+            {
+              img: {
+                width: 488,
+                height: 352,
+                url: "https://hwhfyb8e9b.ufs.sh/f/E8jMENC68tjA4lvPTjxfshF9qjNVRickg0ZzuwdolY726EL5",
+                alt: "Feature Block Image",
+              },
+              byline: "Subtitle lorem ipsum",
+              headline: "Lorem ipsum dolor sit amet",
+              copy: "Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec sem, dapibus ac abc arcu vivamus erat.",
+              cta: { href: "#", children: "Learn more" },
+            },
+            {
+              img: {
+                width: 488,
+                height: 352,
+                url: "https://hwhfyb8e9b.ufs.sh/f/E8jMENC68tjA4lvPTjxfshF9qjNVRickg0ZzuwdolY726EL5",
+                alt: "Feature Block Image",
+              },
+              byline: "Subtitle lorem ipsum",
+              headline: "Lorem ipsum dolor sit amet",
+              copy: "Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec sem, dapibus ac abc arcu vivamus erat.",
+              cta: { href: "#", children: "Learn more" },
+            },
+            {
+              img: {
+                width: 488,
+                height: 352,
+                url: "https://hwhfyb8e9b.ufs.sh/f/E8jMENC68tjA4lvPTjxfshF9qjNVRickg0ZzuwdolY726EL5",
+                alt: "Feature Block Image",
+              },
+              byline: "Subtitle lorem ipsum",
+              headline: "Lorem ipsum dolor sit amet",
+              copy: "Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec sem, dapibus ac abc arcu vivamus erat.",
+              cta: { href: "#", children: "Learn more" },
+            },
+          ]}
+        />
+        <CardTwoBlock
+          theme="dark"
+          heading={{
+            byline: "Lorem ipsum dolor sit",
+            headline: "Card Block Title",
+            copy: "Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec sem, dapibus ac arcu. Vivamus erat massa, posuere ame viverra.",
+            ctas: [
+              { href: "#", children: "Learn more" },
+              { href: "#", children: "Learn more" },
+            ],
+          }}
+          cards={[
+            {
+              img: {
+                width: 488,
+                height: 352,
+                url: "https://hwhfyb8e9b.ufs.sh/f/E8jMENC68tjA4lvPTjxfshF9qjNVRickg0ZzuwdolY726EL5",
+                alt: "Feature Block Image",
+              },
+              byline: "Subtitle lorem ipsum",
+              headline: "Lorem ipsum dolor sit amet",
+              copy: "Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec sem, dapibus ac abc arcu vivamus erat.",
+              cta: { href: "#", children: "Learn more" },
+            },
             {
               img: {
                 width: 488,

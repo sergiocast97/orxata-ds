@@ -11,7 +11,7 @@ const ButtonLink: React.FC<ButtonLink> = ({
 }) => {
   // Button's base styles
   const baseStyles =
-    "inline-flex items-center gap-1 transition focus:outline-0 text-lg font-semibold";
+    "inline-flex text-nowrap items-center gap-1 transition focus:outline-0 text-lg font-semibold";
 
   // Styles specific to button types
   const typeStyles = {

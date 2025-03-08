@@ -38,6 +38,7 @@ declare global {
   interface Heading extends Block {
     copy: string;
     ctas: ButtonLinkList;
+    centered?: boolean;
   }
 
   // Hero Block
