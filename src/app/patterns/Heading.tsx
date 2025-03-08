@@ -1,6 +1,5 @@
-import { ArrowRightIcon } from "@heroicons/react/24/solid";
-import ButtonLink from "@/app/components/ButtonLink";
 import clsx from "clsx";
+import ButtonLinkList from "./ButtonLinkList";
 
 export default function Heading({
   theme = "dark",
@@ -13,7 +12,7 @@ export default function Heading({
   return (
     <div
       className={clsx(
-        "mb-8 flex max-w-[592px] flex-col md:mb-12 lg:mb-16",
+        "max-w-container-small mb-8 flex flex-col md:mb-12 lg:mb-16",
         centered && "md:mx-auto md:items-center md:text-center",
       )}
     >
@@ -26,19 +25,8 @@ export default function Heading({
       <p className="text-light-dark dark:text-dark-lightest mt-4 text-base md:text-lg/relaxed">
         {copy}
       </p>
-      <div className="mt-4 flex flex-wrap gap-4 md:mt-6 md:gap-y-6">
-        {ctas?.map((cta, index) => (
-          <ButtonLink
-            href={cta.href}
-            type={index == 0 ? "solid" : "outline"}
-            theme={theme}
-            key={index}
-          >
-            {cta.children}
-            <ArrowRightIcon className="size-5" />
-          </ButtonLink>
-        ))}
-      </div>
+
+      <ButtonLinkList theme={theme} ctas={ctas} />
     </div>
   );
 }

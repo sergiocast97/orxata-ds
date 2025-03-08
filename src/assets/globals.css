@@ -38,9 +38,15 @@
   --color-dark-lightest: var(--color-neutral-300); /* Text Copy */
   --color-dark-white: var(--color-neutral-000); /* Text Heading */
 
+  /* Corner Radius */
   --radius-small: 6px;
   --radius-medium: 12px;
   --radius-large: 16px;
+
+  /* Container Sizes */
+  --spacing-container-small: 592px;
+  --spacing-container-medium: 800px;
+  --spacing-container-large: 1008px;
 }
 
 @utility container {

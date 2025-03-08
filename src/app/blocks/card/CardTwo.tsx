@@ -14,7 +14,7 @@ export default function CardTwoBlock({ theme = "dark", heading, cards }: CardBlo
             copy={heading.copy}
             ctas={heading.ctas}
           />
-          <div className="mx-auto grid max-w-[1008px] gap-8 md:grid-cols-2">
+          <div className="max-w-container-large mx-auto grid gap-8 md:grid-cols-2">
             {cards.map((card, index) => (
               <CardTwo
                 img={card.img}

@@ -16,7 +16,7 @@ export default function FeatureOneBlock({
     <section data-theme={theme}>
       <div className="bg-light-white dark:bg-dark-darkest text-light-darkest dark:text-dark-white">
         <div className="container py-8 lg:py-12">
-          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 xl:gap-8">
+          <div className="max-w-container-large mx-auto grid grid-cols-1 gap-6 md:grid-cols-2 xl:gap-8">
             <div
               className={clsx(
                 mediaDirection == "left" ? "order-first" : "order-last",

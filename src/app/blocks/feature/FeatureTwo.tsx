@@ -16,7 +16,7 @@ export default function FeatureTwoBlock({
     <section data-theme={theme}>
       <div className="bg-light-white dark:bg-dark-darkest">
         <div className="container py-8 lg:py-12">
-          <div className="bg-dark-dark border-dark-medium mx-auto grid max-w-5xl grid-cols-1 overflow-hidden rounded-2xl border md:grid-cols-2">
+          <div className="bg-dark-dark border-dark-medium max-w-container-large mx-auto grid grid-cols-1 overflow-hidden rounded-2xl border md:grid-cols-2">
             <div
               className={clsx(
                 mediaDirection == "left" ? "order-first" : "order-last",

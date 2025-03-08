@@ -8,7 +8,7 @@ export default function TextTwoBlock({
     <section data-theme={theme}>
       <div className="bg-light-white dark:bg-dark-darkest text-light-darkest dark:text-dark-white">
         <div className="container py-8 lg:py-12">
-          <div className="mx-auto max-w-5xl gap-6 xl:gap-8">
+          <div className="max-w-container-large mx-auto gap-6 xl:gap-8">
             <p className="text-light-dark dark:text-dark-lightest mb-1 text-lg font-semibold">
               {byline}
             </p>
