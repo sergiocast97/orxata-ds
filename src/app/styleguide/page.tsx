@@ -70,23 +70,13 @@ export default function Home() {
             alt: "Hero Image",
           }}
         />
-        <TextOneBlock
-          theme="dark"
-          byline="Lorem ipsum dolor sit amet"
-          headline="Text Block Title"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-          risus ligula, malesuada eget neque accio, condimentum pulvinar erat.
-          Proin molestie varius urna non consectetur.
+        <TextOneBlock theme="dark" byline="Lorem ipsum dolor sit amet" headline="Text Block Title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur risus ligula, malesuada
+          eget neque accio, condimentum pulvinar erat. Proin molestie varius urna non consectetur.
         </TextOneBlock>
-        <TextTwoBlock
-          theme="dark"
-          byline="Lorem ipsum dolor sit amet"
-          headline="Text Block Title"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-          risus ligula, malesuada eget neque accio, condimentum pulvinar erat.
-          Proin molestie varius urna non consectetur.
+        <TextTwoBlock theme="dark" byline="Lorem ipsum dolor sit amet" headline="Text Block Title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur risus ligula, malesuada
+          eget neque accio, condimentum pulvinar erat. Proin molestie varius urna non consectetur.
         </TextTwoBlock>
         3
         <FeatureOneBlock
@@ -102,9 +92,8 @@ export default function Home() {
             alt: "Feature Block Image",
           }}
         >
-          Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec,
-          dapibus ac arcu. Vivamus erat massa, posuere sit amet orci at, viverra
-          hendrerit sem.
+          Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec, dapibus ac arcu.
+          Vivamus erat massa, posuere sit amet orci at, viverra hendrerit sem.
         </FeatureOneBlock>
         <FeatureTwoBlock
           byline="Lorem ipsum dolor sit"
@@ -118,13 +107,12 @@ export default function Home() {
             alt: "Feature Block Image",
           }}
         >
-          Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec,
-          dapibus ac arcu. Vivamus erat massa, posuere sit amet orci at, viverra
-          hendrerit sem.
+          Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec, dapibus ac arcu.
+          Vivamus erat massa, posuere sit amet orci at, viverra hendrerit sem.
         </FeatureTwoBlock>
         <CardOneBlock
-          theme="light"
-          blockHeading={{
+          theme="dark"
+          heading={{
             byline: "Lorem ipsum dolor sit",
             headline: "Card Block Title",
             copy: "Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec sem, dapibus ac arcu. Vivamus erat massa, posuere ame viverra.",
@@ -133,7 +121,44 @@ export default function Home() {
               { href: "#", children: "Learn more" },
             ],
           }}
-          cards={[{}, {}, {}]}
+          cards={[
+            {
+              img: {
+                width: 488,
+                height: 352,
+                url: "https://hwhfyb8e9b.ufs.sh/f/E8jMENC68tjA4lvPTjxfshF9qjNVRickg0ZzuwdolY726EL5",
+                alt: "Feature Block Image",
+              },
+              byline: "Subtitle lorem ipsum",
+              headline: "Lorem ipsum dolor sit amet",
+              copy: "Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec sem, dapibus ac abc arcu vivamus erat.",
+              cta: { href: "#", children: "Learn more" },
+            },
+            {
+              img: {
+                width: 488,
+                height: 352,
+                url: "https://hwhfyb8e9b.ufs.sh/f/E8jMENC68tjA4lvPTjxfshF9qjNVRickg0ZzuwdolY726EL5",
+                alt: "Feature Block Image",
+              },
+              byline: "Subtitle lorem ipsum",
+              headline: "Lorem ipsum dolor sit amet",
+              copy: "Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec sem, dapibus ac abc arcu vivamus erat.",
+              cta: { href: "#", children: "Learn more" },
+            },
+            {
+              img: {
+                width: 488,
+                height: 352,
+                url: "https://hwhfyb8e9b.ufs.sh/f/E8jMENC68tjA4lvPTjxfshF9qjNVRickg0ZzuwdolY726EL5",
+                alt: "Feature Block Image",
+              },
+              byline: "Subtitle lorem ipsum",
+              headline: "Lorem ipsum dolor sit amet",
+              copy: "Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec sem, dapibus ac abc arcu vivamus erat.",
+              cta: { href: "#", children: "Learn more" },
+            },
+          ]}
         />
       </>
     </>

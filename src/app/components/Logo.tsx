@@ -18,10 +18,7 @@ const Logo = ({ theme = "dark" }: { theme?: Theme }) => (
       ></path>
       <defs>
         <clipPath id="clip0_18000_230">
-          <path
-            fill="currentColor"
-            d="M30 0a2 2 0 0 1 2 2v28a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"
-          ></path>
+          <path fill="currentColor" d="M30 0a2 2 0 0 1 2 2v28a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"></path>
         </clipPath>
       </defs>
     </svg>

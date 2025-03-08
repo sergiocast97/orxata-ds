@@ -25,7 +25,6 @@ export default function HeroTwoBlock({
               <p className="text-light-dark dark:text-dark-lightest mt-4 max-w-[48ch] text-lg/relaxed">
                 {copy}
               </p>
-
               <div className="mt-6">
                 <ButtonLink href={cta.href} type="solid" theme={theme}>
                   {cta.children}

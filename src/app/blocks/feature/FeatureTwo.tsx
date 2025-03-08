@@ -33,15 +33,9 @@ export default function FeatureTwoBlock({
               />
             </div>
             <div className="flex flex-col items-start justify-center p-4 md:p-6 lg:p-8">
-              <p className="text-dark-lightest mb-1 text-lg font-semibold">
-                {byline}
-              </p>
-              <h2 className="font-heading text-dark-white mb-2 text-4xl font-bold">
-                {headline}
-              </h2>
-              <div className="text-dark-lightest text-lg/relaxed">
-                {children}
-              </div>
+              <p className="text-dark-lightest mb-1 text-lg font-semibold">{byline}</p>
+              <h2 className="font-heading text-dark-white mb-2 text-4xl font-bold">{headline}</h2>
+              <div className="text-dark-lightest text-lg/relaxed">{children}</div>
               <div className="mt-4">
                 <ButtonLink href={cta.href} type="solid" theme="dark">
                   {cta.children}

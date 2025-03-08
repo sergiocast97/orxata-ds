@@ -27,48 +27,33 @@ declare global {
   // Button Link List
   type ButtonLinkList = Array<ButtonLink>;
 
-  // Navigation
-  interface Navigation {
+  // Common props
+  interface Block {
     theme?: Theme;
-  }
-
-  // Footer
-  interface Footer {
-    theme?: Theme;
-  }
-
-  // Block Heading Props
-  interface BlockHeading {
-    theme?: Theme;
-    byline: string;
+    byline?: string;
     headline: string;
+  }
+
+  // Heading Props
+  interface Heading extends Block {
     copy: string;
     ctas: ButtonLinkList;
   }
 
-  // Text Block
-  interface TextBlock {
-    theme?: Theme;
-    byline: string;
-    headline: string;
-    children: React.ReactNode;
-  }
-
   // Hero Block
-  interface HeroBlock {
-    theme?: Theme;
-    byline: string;
-    headline: string;
+  interface HeroBlock extends Block {
     copy: string;
     cta: ButtonLink;
     img: Image;
   }
 
+  // Text Block
+  interface TextBlock extends Block {
+    children: React.ReactNode;
+  }
+
   // Feature Block
-  interface FeatureBlock {
-    theme?: Theme;
-    byline: string;
-    headline: string;
+  interface FeatureBlock extends Block {
     children: React.ReactNode;
     mediaDirection?: "left" | "right";
     cta: ButtonLink;
@@ -77,6 +62,7 @@ declare global {
 
   interface Card {
     img: Image;
+    byline: string;
     headline: string;
     copy: string;
     cta: ButtonLink;
@@ -85,7 +71,7 @@ declare global {
   // Card Block
   interface CardBlock {
     theme?: Theme;
-    blockHeading: BlockHeading;
+    heading: Heading;
     cards: Array<Card>;
   }
 
@@ -99,7 +85,7 @@ declare global {
   // List Block
   interface ListBlock {
     theme?: Theme;
-    BlockHeading: BlockHeading;
+    heading: Heading;
     list: Array<ListItem>;
   }
 }

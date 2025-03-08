@@ -36,9 +36,7 @@ export default function FeatureOneBlock({
               <p className="text-light-dark dark:text-dark-lightest mb-1 text-lg font-semibold">
                 {byline}
               </p>
-              <h2 className="font-heading mb-2 text-4xl font-bold">
-                {headline}
-              </h2>
+              <h2 className="font-heading mb-2 text-4xl font-bold">{headline}</h2>
               <div className="text-light-dark dark:text-dark-lightest text-lg/relaxed">
                 {children}
               </div>

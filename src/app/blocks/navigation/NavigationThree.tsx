@@ -2,7 +2,7 @@ import ButtonLink from "@/app/components/ButtonLink";
 import Logo from "@/app/components/Logo";
 import NavItems from "@/app/patterns/NavItems";
 
-export default function NavigationThreeBlock({ theme = "dark" }: Navigation) {
+export default function NavigationThreeBlock({ theme = "dark" }: { theme: Theme }) {
   return (
     <>
       <section data-theme={theme}>

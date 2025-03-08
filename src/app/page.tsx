@@ -19,14 +19,9 @@ export default function Home() {
           alt: "Hero Image",
         }}
       />
-      <TextOneBlock
-        theme="dark"
-        byline="Lorem ipsum dolor sit amet"
-        headline="Text Block Title"
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur risus
-        ligula, malesuada eget neque accio, condimentum pulvinar erat. Proin
-        molestie varius urna non consectetur.
+      <TextOneBlock theme="dark" byline="Lorem ipsum dolor sit amet" headline="Text Block Title">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur risus ligula, malesuada
+        eget neque accio, condimentum pulvinar erat. Proin molestie varius urna non consectetur.
       </TextOneBlock>
     </>
   );
