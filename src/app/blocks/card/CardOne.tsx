@@ -1,7 +1,7 @@
 import Heading from "@/app/patterns/Heading";
 import CardOne from "@/app/patterns/CardOne";
 
-export default function CardOneBlock({ theme = "dark", heading, cards }: CardBlock) {
+export default function CardOneBlock({ theme = "dark" }: CardBlock) {
   return (
     <section data-theme={theme}>
       <div className="bg-light-white dark:bg-dark-darkest text-light-darkest dark:text-dark-white overflow-hidden">
@@ -9,21 +9,25 @@ export default function CardOneBlock({ theme = "dark", heading, cards }: CardBlo
           <Heading
             theme={theme}
             centered={false}
-            byline={heading.byline}
-            headline={heading.headline}
-            copy={heading.copy}
-            ctas={heading.ctas}
+            byline="Lorem ipsum dolor sit"
+            headline="Card Block Title"
+            copy="Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec sem, dapibus ac arcu. Vivamus erat massa, posuere ame viverra."
           />
           <div className="-mx-8 overflow-x-auto px-8 pb-8 lg:mx-0 lg:overflow-hidden lg:px-0 lg:pb-0">
             <div className="flex items-stretch gap-8 lg:grid lg:grid-cols-3">
-              {cards.map((card, index) => (
+              {[{}, {}, {}].map((card, index) => (
                 <CardOne
-                  img={card.img}
-                  byline={card.byline}
-                  headline={card.headline}
-                  copy={card.copy}
+                  img={{
+                    width: 488,
+                    height: 352,
+                    url: "https://hwhfyb8e9b.ufs.sh/f/E8jMENC68tjA4lvPTjxfshF9qjNVRickg0ZzuwdolY726EL5",
+                    alt: "Feature Block Image",
+                  }}
+                  byline="Subtitle lorem ipsum"
+                  headline="Lorem ipsum dolor sit amet"
+                  copy="Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec sem, dapibus ac abc arcu vivamus erat."
                   key={index}
-                  cta={card.cta}
+                  cta={{ href: "#", children: "Learn more" }}
                 />
               ))}
             </div>

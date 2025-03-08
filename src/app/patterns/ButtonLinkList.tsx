@@ -9,7 +9,7 @@ export default function ButtonLinkList({
   theme: Theme;
 }) {
   return (
-    <div className="mt-4 flex flex-wrap gap-4 md:mt-6 md:gap-y-6">
+    <div className="mt-4 flex grow flex-wrap gap-4 md:mt-6 md:gap-y-6">
       {ctas?.map((cta, index) => (
         <ButtonLink
           href={cta.href}

@@ -5,12 +5,7 @@ import clsx from "clsx";
 
 export default function FeatureOneBlock({
   theme = "dark",
-  byline = "",
-  headline,
-  children,
   mediaDirection = "right",
-  cta,
-  img,
 }: FeatureBlock) {
   return (
     <section data-theme={theme}>
@@ -24,25 +19,26 @@ export default function FeatureOneBlock({
               )}
             >
               <Image
-                width={img.width}
-                height={img.height}
-                src={img.url}
-                alt={img.alt}
-                className="aspect-[4/3] min-h-full w-full rounded-2xl object-cover"
+                width={488}
+                height={352}
+                src="https://hwhfyb8e9b.ufs.sh/f/E8jMENC68tjA4lvPTjxfshF9qjNVRickg0ZzuwdolY726EL5"
+                alt="Feature Block Image"
+                className="rounded-large aspect-[4/3] min-h-full w-full object-cover"
                 loading="lazy"
               />
             </div>
             <div className="flex flex-col items-start justify-center">
               <p className="text-light-dark dark:text-dark-lightest mb-1 text-lg font-semibold">
-                {byline}
+                Lorem ipsum dolor sit
               </p>
-              <h2 className="font-heading mb-2 text-4xl font-bold">{headline}</h2>
+              <h2 className="font-heading mb-2 text-4xl font-bold">Feature Block Title</h2>
               <div className="text-light-dark dark:text-dark-lightest text-lg/relaxed">
-                {children}
+                Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec, dapibus ac
+                arcu. Vivamus erat massa, posuere sit amet orci at, viverra hendrerit sem.
               </div>
               <div className="mt-4">
-                <ButtonLink href={cta.href} type="link" theme={theme}>
-                  {cta.children}
+                <ButtonLink href="#" type="link" theme={theme}>
+                  Learn more
                   <ArrowRightIcon className="size-5" />
                 </ButtonLink>
               </div>

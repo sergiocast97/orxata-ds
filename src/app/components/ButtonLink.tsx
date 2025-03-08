@@ -17,14 +17,14 @@ const ButtonLink: React.FC<ButtonLink> = ({
   const typeStyles = {
     // Themed solid buttons
     solid: clsx(
-      "px-4 py-2 rounded-xl bg-linear-to-b btn-shadow active:to-neutral-500",
+      "px-4 py-2 rounded-medium bg-linear-to-b btn-shadow active:to-neutral-500",
       theme === "light"
         ? " from-neutral-900 to-neutral-600 text-neutral-000 " // Light
         : " from-neutral-300 to-neutral-000 text-neutral-900", // Dark
     ),
     // Themed outline buttons
     outline: clsx(
-      "px-4 py-2 rounded-xl border-2 active:border-neutral-weak",
+      "px-4 py-2 rounded-medium border-2 active:border-neutral-weak",
       theme === "light"
         ? " border-neutral-900 text-neutral-900 " // Light
         : " border-neutral-000 text-neutral-000 ", // Dark

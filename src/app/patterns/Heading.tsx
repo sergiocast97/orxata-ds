@@ -7,7 +7,6 @@ export default function Heading({
   byline = "",
   headline,
   copy,
-  ctas,
 }: Heading) {
   return (
     <div
@@ -26,7 +25,13 @@ export default function Heading({
         {copy}
       </p>
 
-      <ButtonLinkList theme={theme} ctas={ctas} />
+      <ButtonLinkList
+        theme={theme}
+        ctas={[
+          { href: "#", children: "Learn more" },
+          { href: "#", children: "Learn more" },
+        ]}
+      />
     </div>
   );
 }

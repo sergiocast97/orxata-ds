@@ -30,15 +30,13 @@ export default function ColourPalette() {
         {content.map((palette, index) => {
           return (
             <div key={index} className="">
-              <h4 className="font-heading mb-6 text-4xl font-bold">
-                {palette.title}
-              </h4>
+              <h4 className="font-heading mb-6 text-4xl font-bold">{palette.title}</h4>
               <div className="flex flex-wrap gap-4 md:gap-6">
                 {palette.items.map((item, index) => {
                   return (
                     <div key={index}>
                       <div
-                        className={` ${item.class} size-32 rounded-xl border border-neutral-500/50`}
+                        className={` ${item.class} rounded-medium size-32 border border-neutral-500/50`}
                       ></div>
 
                       <p className="body-md text-light-dark dark:text-dark-lightest mt-1 font-semibold">
