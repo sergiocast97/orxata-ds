@@ -18,7 +18,7 @@ export default function CtaOneBlock({ theme = "dark" }: CtaBlockProps) {
               </div>
               <div className="flex lg:justify-end">
                 <CtaButtonList
-                  theme={theme}
+                  theme="dark"
                   ctas={[
                     { href: "#", children: "Learn more" },
                     { href: "#", children: "Learn more" },

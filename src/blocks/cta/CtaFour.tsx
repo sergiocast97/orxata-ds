@@ -9,7 +9,7 @@ export default function CtaFourBlock({ theme }: CtaBlockProps) {
         <div className="container py-4 lg:py-6">
           <div className="flex flex-col items-center justify-center gap-x-8 gap-y-2 text-center md:flex-row">
             <h2 className="font-heading text-lg font-semibold">Promotional Message with CTA</h2>
-            <CtaButton href="#" type="link" theme={theme}>
+            <CtaButton href="#" type="link" theme="dark">
               Learn more
               <ArrowRightIcon className="size-5" />
             </CtaButton>

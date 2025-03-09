@@ -13,7 +13,7 @@ export default function CtaTwoBlock({ theme = "dark" }: CtaBlockProps) {
                 incididunt ut labore.
               </p>
               <CtaButtonList
-                theme={theme}
+                theme="dark"
                 ctas={[
                   { href: "#", children: "Learn more" },
                   { href: "#", children: "Learn more" },

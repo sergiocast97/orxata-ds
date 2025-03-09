@@ -85,10 +85,6 @@
 
 @layer base {
   html {
-    background-image: linear-gradient(
-      to bottom,
-      var(--color-dark-white),
-      var(--color-dark-darkest)
-    );
+    background-color: var(--color-dark-darkest);
   }
 }

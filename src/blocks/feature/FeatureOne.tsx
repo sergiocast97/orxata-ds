@@ -38,7 +38,7 @@ export default function FeatureOneBlock({
               </div>
               <div>
                 <CtaButtonList
-                  theme="dark"
+                  theme={theme}
                   ctas={[
                     { href: "#", children: "Learn more" },
                     { href: "#", children: "Learn more" },
