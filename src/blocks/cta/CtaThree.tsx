@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import CtaButtonList from "@/app/patterns/CtaButtonList";
+import CtaButtonList from "@/patterns/CtaButtonList";
 
 export default function CtaThreeBlock({ theme = "dark" }: CtaBlockProps) {
   return (

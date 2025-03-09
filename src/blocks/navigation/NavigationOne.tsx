@@ -1,6 +1,6 @@
-import CtaButton from "@/app/components/CtaButton";
-import Logo from "@/app/components/Logo";
-import NavItems from "@/app/patterns/NavItems";
+import CtaButton from "@/components/CtaButton";
+import Logo from "@/components/Logo";
+import NavItems from "@/patterns/NavItems";
 
 export default function NavigationOneBlock({ theme = "dark" }: { theme: ThemeType }) {
   return (

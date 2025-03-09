@@ -1,4 +1,4 @@
-import CtaButton from "@/app/components/CtaButton";
+import CtaButton from "@/components/CtaButton";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
 export default function CtaButtonList({

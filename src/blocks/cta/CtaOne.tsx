@@ -1,4 +1,4 @@
-import CtaButtonList from "@/app/patterns/CtaButtonList";
+import CtaButtonList from "@/patterns/CtaButtonList";
 
 export default function CtaOneBlock({ theme = "dark" }: CtaBlockProps) {
   return (

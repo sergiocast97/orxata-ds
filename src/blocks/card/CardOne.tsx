@@ -1,5 +1,5 @@
-import Heading from "@/app/patterns/Heading";
-import CardOne from "@/app/patterns/CardOne";
+import Heading from "@/patterns/Heading";
+import CardOne from "@/patterns/CardOne";
 
 export default function CardOneBlock({ theme = "dark" }: CardBlockProps) {
   return (

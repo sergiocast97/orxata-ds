@@ -1,5 +1,5 @@
-import Heading from "@/app/patterns/Heading";
-import CardTwo from "@/app/patterns/CardTwo";
+import Heading from "@/patterns/Heading";
+import CardTwo from "@/patterns/CardTwo";
 
 export default function CardTwoBlock({ theme = "dark" }: CardBlockProps) {
   return (

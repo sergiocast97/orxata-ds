@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
-import CtaButton from "@/app/components/CtaButton";
+import CtaButton from "@/components/CtaButton";
 
 export default function HeroOneBlock({ theme = "dark" }: HeroBlockProps) {
   return (

@@ -4,22 +4,22 @@ import ColourPalette from "./ColourPalette";
 import Iconography from "./Iconography";
 import BlockTitle from "./BlockTitle";
 
-import NavigationOneBlock from "@/app/blocks/navigation/NavigationOne";
-import NavigationTwoBlock from "@/app/blocks/navigation/NavigationTwo";
-import NavigationThreeBlock from "@/app/blocks/navigation/NavigationThree";
-import HeroOneBlock from "@/app/blocks/hero/HeroOne";
-import HeroTwoBlock from "@/app/blocks/hero/HeroTwo";
-import HeroThreeBlock from "@/app/blocks/hero/HeroThree";
-import TextOneBlock from "@/app/blocks/text/TextOne";
-import TextTwoBlock from "@/app/blocks/text/TextTwo";
-import FeatureOneBlock from "@/app/blocks/feature/FeatureOne";
-import FeatureTwoBlock from "@/app/blocks/feature/FeatureTwo";
-import CardOneBlock from "@/app/blocks/card/CardOne";
-import CardTwoBlock from "@/app/blocks/card/CardTwo";
-import CtaOneBlock from "@/app/blocks/cta/CtaOne";
-import CtaTwoBlock from "@/app/blocks/cta/CtaTwo";
-import CtaThreeBlock from "@/app/blocks/cta/CtaThree";
-import CtaFourBlock from "@/app/blocks/cta/CtaFour";
+import NavigationOneBlock from "@/blocks/navigation/NavigationOne";
+import NavigationTwoBlock from "@/blocks/navigation/NavigationTwo";
+import NavigationThreeBlock from "@/blocks/navigation/NavigationThree";
+import HeroOneBlock from "@/blocks/hero/HeroOne";
+import HeroTwoBlock from "@/blocks/hero/HeroTwo";
+import HeroThreeBlock from "@/blocks/hero/HeroThree";
+import TextOneBlock from "@/blocks/text/TextOne";
+import TextTwoBlock from "@/blocks/text/TextTwo";
+import FeatureOneBlock from "@/blocks/feature/FeatureOne";
+import FeatureTwoBlock from "@/blocks/feature/FeatureTwo";
+import CardOneBlock from "@/blocks/card/CardOne";
+import CardTwoBlock from "@/blocks/card/CardTwo";
+import CtaOneBlock from "@/blocks/cta/CtaOne";
+import CtaTwoBlock from "@/blocks/cta/CtaTwo";
+import CtaThreeBlock from "@/blocks/cta/CtaThree";
+import CtaFourBlock from "@/blocks/cta/CtaFour";
 
 export default function Home() {
   // Default theme

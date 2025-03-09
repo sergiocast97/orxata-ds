@@ -1,8 +1,8 @@
-import NavigationOneBlock from "@/app/blocks/navigation/NavigationOne";
-import HeroOneBlock from "@/app/blocks/hero/HeroOne";
-import TextOneBlock from "@/app/blocks/text/TextOne";
-import CardTwoBlock from "@/app/blocks/card/CardTwo";
-import CtaThreeBlock from "@/app/blocks/cta/CtaThree";
+import NavigationOneBlock from "@/blocks/navigation/NavigationOne";
+import HeroOneBlock from "@/blocks/hero/HeroOne";
+import TextOneBlock from "@/blocks/text/TextOne";
+import CardTwoBlock from "@/blocks/card/CardTwo";
+import CtaThreeBlock from "@/blocks/cta/CtaThree";
 
 export default function Home() {
   const theme = "light";

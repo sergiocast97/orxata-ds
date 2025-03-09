@@ -1,15 +1,24 @@
 import Image from "next/image";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
-import CtaButton from "@/app/components/CtaButton";
+import CtaButton from "@/components/CtaButton";
 
-export default function HeroTwoBlock({ theme = "dark" }: HeroBlockProps) {
+export default function HeroThreeBlock({ theme = "dark" }: HeroBlockProps) {
   return (
     <section data-theme={theme}>
       <div className="bg-light-white dark:bg-dark-darkest text-light-darkest dark:text-dark-white">
         <div className="container py-8 pb-24 lg:pt-12">
-          <div className="grid grid-cols-1 gap-4 md:gap-8 lg:grid-cols-2">
-            <div className="flex flex-col items-start justify-center">
+          <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-12 text-center">
+            <Image
+              width={1280}
+              height={360}
+              src="https://hwhfyb8e9b.ufs.sh/f/E8jMENC68tjA4lvPTjxfshF9qjNVRickg0ZzuwdolY726EL5"
+              alt="Hero Image"
+              className="rounded-large aspect-[3/2] w-full object-cover sm:aspect-[2/1] lg:aspect-[5/2]"
+              loading="lazy"
+            />
+
+            <div className="mx-auto flex max-w-2xl flex-col items-center justify-center">
               <p className="text-light-dark dark:text-dark-lightest mb-1 text-lg/relaxed font-semibold">
                 Lorem ipsum dolor sit amet
               </p>
@@ -27,14 +36,6 @@ export default function HeroTwoBlock({ theme = "dark" }: HeroBlockProps) {
                 </CtaButton>
               </div>
             </div>
-            <Image
-              width={592}
-              height={437}
-              src="https://hwhfyb8e9b.ufs.sh/f/E8jMENC68tjA4lvPTjxfshF9qjNVRickg0ZzuwdolY726EL5"
-              alt="Hero Image"
-              className="rounded-large aspect-[3/2] w-full object-cover sm:aspect-[2/1] lg:aspect-[4/3]"
-              loading="lazy"
-            />
           </div>
         </div>
       </div>

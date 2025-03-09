@@ -2,7 +2,7 @@ import Image from "next/image";
 import clsx from "clsx";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
-import CtaButton from "@/app/components/CtaButton";
+import CtaButton from "@/components/CtaButton";
 
 export default function FeatureOneBlock({
   theme = "dark",

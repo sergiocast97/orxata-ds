@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import CtaButtonList from "@/app/patterns/CtaButtonList";
+import CtaButtonList from "@/patterns/CtaButtonList";
 
 export default function Heading({
   theme = "dark",

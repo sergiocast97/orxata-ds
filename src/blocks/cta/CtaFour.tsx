@@ -1,6 +1,6 @@
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
-import CtaButton from "@/app/components/CtaButton";
+import CtaButton from "@/components/CtaButton";
 
 export default function CtaFourBlock({ theme }: CtaBlockProps) {
   return (
