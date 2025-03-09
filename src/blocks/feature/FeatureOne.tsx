@@ -14,7 +14,7 @@ export default function FeatureOneBlock({
           <div className="max-w-container-large mx-auto grid grid-cols-1 gap-6 md:grid-cols-2 xl:gap-8">
             <div
               className={clsx(
-                mediaDirection == "left" ? "order-first" : "order-last",
+                mediaDirection === "left" ? "order-first" : "order-last",
                 "order h-full",
               )}
             >

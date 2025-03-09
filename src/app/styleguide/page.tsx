@@ -16,8 +16,8 @@ export default function Styleguide() {
             <Iconography />
           </div>
         </div>
+        <BlockOverview theme={theme} />
       </section>
-      <BlockOverview theme={theme} />
     </>
   );
 }

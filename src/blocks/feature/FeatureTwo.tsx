@@ -14,7 +14,7 @@ export default function FeatureTwoBlock({
           <div className="bg-dark-dark border-dark-medium max-w-container-large rounded-large mx-auto grid grid-cols-1 overflow-hidden border md:grid-cols-2">
             <div
               className={clsx(
-                mediaDirection == "left" ? "order-first" : "order-last",
+                mediaDirection === "left" ? "order-first" : "order-last",
                 "order h-full",
               )}
             >
