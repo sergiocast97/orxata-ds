@@ -1,8 +1,7 @@
 import Image from "next/image";
 import clsx from "clsx";
-import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
-import CtaButton from "@/components/CtaButton";
+import CtaButtonList from "@/patterns/CtaButtonList";
 
 export default function FeatureOneBlock({
   theme = "dark",
@@ -37,11 +36,14 @@ export default function FeatureOneBlock({
                 Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec, dapibus ac
                 arcu. Vivamus erat massa, posuere sit amet orci at, viverra hendrerit sem.
               </div>
-              <div className="mt-4">
-                <CtaButton href="#" type="link" theme={theme}>
-                  Learn more
-                  <ArrowRightIcon className="size-5" />
-                </CtaButton>
+              <div>
+                <CtaButtonList
+                  theme="dark"
+                  ctas={[
+                    { href: "#", children: "Learn more" },
+                    { href: "#", children: "Learn more" },
+                  ]}
+                />
               </div>
             </div>
           </div>

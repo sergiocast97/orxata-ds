@@ -13,12 +13,12 @@ export default function CtaButtonList({
       {ctas?.map((cta, index) => (
         <CtaButton
           href={cta.href}
-          type={index == 0 ? "solid" : "outline"}
+          type={cta.type ? cta.type : index === 0 ? "solid" : "outline"}
           theme={theme}
           key={index}
         >
           {cta.children}
-          <ArrowRightIcon className="size-5" />
+          {index === 0 ? <ArrowRightIcon className="size-5" /> : ""}
         </CtaButton>
       ))}
     </div>

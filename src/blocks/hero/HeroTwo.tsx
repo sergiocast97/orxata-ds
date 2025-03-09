@@ -1,7 +1,6 @@
 import Image from "next/image";
-import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
-import CtaButton from "@/components/CtaButton";
+import CtaButtonList from "@/patterns/CtaButtonList";
 
 export default function HeroTwoBlock({ theme = "dark" }: HeroBlockProps) {
   return (
@@ -20,11 +19,14 @@ export default function HeroTwoBlock({ theme = "dark" }: HeroBlockProps) {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra eros bibendum
                 sapien sagittis, ac efficitur felis accumsan. Vivamus ut efficitur risus.
               </p>
-              <div className="mt-6">
-                <CtaButton href="#" type="solid" theme={theme}>
-                  Learn more
-                  <ArrowRightIcon className="size-5" />
-                </CtaButton>
+              <div>
+                <CtaButtonList
+                  theme="dark"
+                  ctas={[
+                    { href: "#", children: "Join now" },
+                    { href: "#", children: "Learn more", type: "link" },
+                  ]}
+                />
               </div>
             </div>
             <Image

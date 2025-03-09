@@ -25,7 +25,7 @@ export default function CardOneBlock({ theme = "dark" }: CardBlockProps) {
                   }}
                   byline="Subtitle lorem ipsum"
                   headline="Lorem ipsum dolor sit amet"
-                  copy="Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec sem, dapibus ac abc arcu vivamus erat."
+                  copy="Donec vel auctor augue. Nulla metus sem, pellen tesque ut cursus nec sem, dapibus ac abc arcu vivamus erat."
                   key={index}
                   cta={{ href: "#", children: "Learn more" }}
                 />
