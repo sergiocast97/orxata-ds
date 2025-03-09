@@ -31,7 +31,7 @@ export default function HeroOneBlock({ theme = "dark" }: HeroBlockProps) {
               </p>
               <div>
                 <CtaButtonList
-                  theme="dark"
+                  theme={theme}
                   ctas={[
                     { href: "#", children: "Join now" },
                     { href: "#", children: "Learn more", type: "link" },

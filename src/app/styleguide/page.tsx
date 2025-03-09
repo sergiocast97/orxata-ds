@@ -22,6 +22,8 @@ import CtaThreeBlock from "@/blocks/cta/CtaThree";
 import CtaFourBlock from "@/blocks/cta/CtaFour";
 import NewsletterOneBlock from "@/blocks/newsletter/NewsletterOne";
 import NewsletterTwoBlock from "@/blocks/newsletter/NewsletterTwo";
+import FooterOne from "@/blocks/footer/FooterOne";
+import FooterTwo from "@/blocks/footer/FooterTwo";
 
 export default function Home() {
   // Default theme
@@ -91,17 +93,17 @@ export default function Home() {
         </BlockTitle>
 
         {/* CTA Blocks */}
-        <BlockTitle title="Cta" main={true} />
-        <BlockTitle title="Cta One">
+        <BlockTitle title="Call To Action" main={true} />
+        <BlockTitle title="Call To Action One">
           <CtaOneBlock theme={theme} />
         </BlockTitle>
-        <BlockTitle title="Cta Two">
+        <BlockTitle title="Call To Action Two">
           <CtaTwoBlock theme={theme} />
         </BlockTitle>
-        <BlockTitle title="Cta Three">
+        <BlockTitle title="Call To Action Three">
           <CtaThreeBlock theme={theme} />
         </BlockTitle>
-        <BlockTitle title="Cta Four">
+        <BlockTitle title="Call To Action Four">
           <CtaFourBlock theme={theme} />
         </BlockTitle>
 
@@ -112,6 +114,15 @@ export default function Home() {
         </BlockTitle>
         <BlockTitle title="Newsletter Two">
           <NewsletterTwoBlock theme={theme} />
+        </BlockTitle>
+
+        {/* Footer Blocks */}
+        <BlockTitle title="Footer" main={true} />
+        <BlockTitle title="Footer One">
+          <FooterOne />
+        </BlockTitle>
+        <BlockTitle title="Footer Two">
+          <FooterTwo />
         </BlockTitle>
       </>
     </>
