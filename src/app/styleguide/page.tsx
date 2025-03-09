@@ -20,6 +20,8 @@ import CtaOneBlock from "@/blocks/cta/CtaOne";
 import CtaTwoBlock from "@/blocks/cta/CtaTwo";
 import CtaThreeBlock from "@/blocks/cta/CtaThree";
 import CtaFourBlock from "@/blocks/cta/CtaFour";
+import NewsletterOneBlock from "@/blocks/newsletter/NewsletterOne";
+import NewsletterTwoBlock from "@/blocks/newsletter/NewsletterTwo";
 
 export default function Home() {
   // Default theme
@@ -37,7 +39,7 @@ export default function Home() {
         </div>
       </section>
       <>
-        {/* Navigations */}
+        {/* Navigation Blocks */}
         <BlockTitle title="Navigation" main={true} />
         <BlockTitle title="Navigation One">
           <NavigationOneBlock theme={theme} />
@@ -49,7 +51,7 @@ export default function Home() {
           <NavigationThreeBlock theme={theme} />
         </BlockTitle>
 
-        {/* Heros */}
+        {/* Hero Blocks */}
         <BlockTitle title="Hero" main={true} />
         <BlockTitle title="Hero One">
           <HeroOneBlock theme={theme} />
@@ -61,7 +63,7 @@ export default function Home() {
           <HeroThreeBlock theme={theme} />
         </BlockTitle>
 
-        {/* Text */}
+        {/* Text Blocks */}
         <BlockTitle title="Text" main={true} />
         <BlockTitle title="Text One">
           <TextOneBlock theme={theme} />
@@ -70,7 +72,7 @@ export default function Home() {
           <TextTwoBlock theme={theme} />
         </BlockTitle>
 
-        {/* Feature */}
+        {/* Feature Blocks */}
         <BlockTitle title="Feature" main={true} />
         <BlockTitle title="Feature One">
           <FeatureOneBlock theme={theme} />
@@ -79,7 +81,7 @@ export default function Home() {
           <FeatureTwoBlock theme={theme} />
         </BlockTitle>
 
-        {/* Card */}
+        {/* Card Blocks */}
         <BlockTitle title="Card" main={true} />
         <BlockTitle title="Card One">
           <CardOneBlock theme={theme} />
@@ -88,7 +90,7 @@ export default function Home() {
           <CardTwoBlock theme={theme} />
         </BlockTitle>
 
-        {/* CTAs */}
+        {/* CTA Blocks */}
         <BlockTitle title="Cta" main={true} />
         <BlockTitle title="Cta One">
           <CtaOneBlock theme={theme} />
@@ -101,6 +103,15 @@ export default function Home() {
         </BlockTitle>
         <BlockTitle title="Cta Four">
           <CtaFourBlock theme={theme} />
+        </BlockTitle>
+
+        {/* Newsletter Blocks */}
+        <BlockTitle title="Newsletter" main={true} />
+        <BlockTitle title="Newsletter One">
+          <NewsletterOneBlock theme={theme} />
+        </BlockTitle>
+        <BlockTitle title="Newsletter Two">
+          <NewsletterTwoBlock theme={theme} />
         </BlockTitle>
       </>
     </>

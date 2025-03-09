@@ -14,7 +14,7 @@ export default function CtaButton({
     "inline-flex text-nowrap items-center gap-1 transition focus:outline-0 text-lg font-semibold";
 
   // Styles specific to button types
-  const typeStyles = {
+  const buttonTypeStyles = {
     // Themed solid buttons
     solid: clsx(
       "px-4 py-2 rounded-medium bg-linear-to-b btn-shadow active:to-neutral-500",
@@ -43,7 +43,7 @@ export default function CtaButton({
       href={href}
       target={newTab ? "_blank" : ""}
       // Join base, type and custom classes
-      className={clsx(baseStyles, typeStyles[type], className)}
+      className={clsx(baseStyles, buttonTypeStyles[type], className)}
     >
       {children}
     </Link>

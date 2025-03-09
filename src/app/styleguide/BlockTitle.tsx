@@ -12,7 +12,7 @@ export default function BlockTitle({
   return (
     <>
       <section>
-        <div className={clsx(main ? "bg-neutral-800" : "bg-neutral-700")}>
+        <div className={clsx(main ? "bg-neutral-700" : "bg-neutral-600")}>
           <div className="container grid place-content-center py-8">
             <h2 className="text-dark-white text-3xl font-bold">{title}</h2>
           </div>
