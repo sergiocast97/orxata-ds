@@ -1,12 +1,13 @@
 import Image from "next/image";
-import ButtonLink from "../../components/ButtonLink";
-import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import clsx from "clsx";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
+
+import CtaButton from "@/app/components/CtaButton";
 
 export default function FeatureTwoBlock({
   theme = "dark",
   mediaDirection = "right",
-}: FeatureBlock) {
+}: FeatureBlockProps) {
   return (
     <section data-theme={theme}>
       <div className="bg-light-white dark:bg-dark-darkest">
@@ -37,10 +38,10 @@ export default function FeatureTwoBlock({
                 arcu. Vivamus erat massa, posuere sit amet orci at, viverra hendrerit sem.
               </div>
               <div className="mt-4">
-                <ButtonLink href="#" type="solid" theme="dark">
+                <CtaButton href="#" type="solid" theme="dark">
                   Learn more
                   <ArrowRightIcon className="size-5" />
-                </ButtonLink>
+                </CtaButton>
               </div>
             </div>
           </div>

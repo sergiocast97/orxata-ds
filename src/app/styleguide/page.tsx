@@ -16,10 +16,10 @@ import FeatureOneBlock from "@/app/blocks/feature/FeatureOne";
 import FeatureTwoBlock from "@/app/blocks/feature/FeatureTwo";
 import CardOneBlock from "@/app/blocks/card/CardOne";
 import CardTwoBlock from "@/app/blocks/card/CardTwo";
-import CtaOneBlock from "../blocks/cta/CtaOne";
-import CtaTwoBlock from "../blocks/cta/CtaTwo";
-import CtaThreeBlock from "../blocks/cta/CtaThree";
-import CtaFourBlock from "../blocks/cta/CtaFour";
+import CtaOneBlock from "@/app/blocks/cta/CtaOne";
+import CtaTwoBlock from "@/app/blocks/cta/CtaTwo";
+import CtaThreeBlock from "@/app/blocks/cta/CtaThree";
+import CtaFourBlock from "@/app/blocks/cta/CtaFour";
 
 export default function Home() {
   // Default theme

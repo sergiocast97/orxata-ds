@@ -1,17 +1,17 @@
+import CtaButton from "@/app/components/CtaButton";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
-import ButtonLink from "@/app/components/ButtonLink";
 
-export default function ButtonLinkList({
+export default function CtaButtonList({
   ctas,
   theme = "dark",
 }: {
-  ctas: ButtonLinkList;
-  theme: Theme;
+  ctas: CtaButtonListProps;
+  theme: ThemeType;
 }) {
   return (
     <div className="mt-4 flex grow flex-wrap gap-4 md:mt-6 md:gap-y-6">
       {ctas?.map((cta, index) => (
-        <ButtonLink
+        <CtaButton
           href={cta.href}
           type={index == 0 ? "solid" : "outline"}
           theme={theme}
@@ -19,7 +19,7 @@ export default function ButtonLinkList({
         >
           {cta.children}
           <ArrowRightIcon className="size-5" />
-        </ButtonLink>
+        </CtaButton>
       ))}
     </div>
   );

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function CardOne({ img, byline, headline, copy, cta }: Card) {
+export default function CardOne({ img, byline, headline, copy, cta }: CardProps) {
   return (
     <div className="w-72 shrink-0 md:w-96 lg:w-full">
       <Link href={cta.href}>

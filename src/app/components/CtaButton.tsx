@@ -1,14 +1,14 @@
 import Link from "next/link";
 import clsx from "clsx";
 
-const ButtonLink: React.FC<ButtonLink> = ({
+export default function CtaButton({
   children,
   href,
   newTab = false,
   type = "solid",
   theme = "light",
   className = "",
-}) => {
+}: CtaButtonProps) {
   // Button's base styles
   const baseStyles =
     "inline-flex text-nowrap items-center gap-1 transition focus:outline-0 text-lg font-semibold";
@@ -48,6 +48,4 @@ const ButtonLink: React.FC<ButtonLink> = ({
       {children}
     </Link>
   );
-};
-
-export default ButtonLink;
+}

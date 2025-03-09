@@ -5,7 +5,7 @@ import CardTwoBlock from "@/app/blocks/card/CardTwo";
 import CtaThreeBlock from "@/app/blocks/cta/CtaThree";
 
 export default function Home() {
-  const theme = "dark";
+  const theme = "light";
   return (
     <>
       <NavigationOneBlock theme={theme} />

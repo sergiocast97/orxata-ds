@@ -1,7 +1,8 @@
 import Image from "next/image";
-import ButtonLinkList from "@/app/patterns/ButtonLinkList";
 
-export default function CtaThreeBlock({ theme = "dark" }: CtaBlock) {
+import CtaButtonList from "@/app/patterns/CtaButtonList";
+
+export default function CtaThreeBlock({ theme = "dark" }: CtaBlockProps) {
   return (
     <section data-theme={theme}>
       <div className="bg-light-white dark:bg-dark-darkest">
@@ -26,8 +27,8 @@ export default function CtaThreeBlock({ theme = "dark" }: CtaBlock) {
                 incididunt ut labore.
               </div>
               <div className="mt-2">
-                <ButtonLinkList
-                  theme={theme}
+                <CtaButtonList
+                  theme="dark"
                   ctas={[
                     { href: "#", children: "Learn more" },
                     { href: "#", children: "Learn more" },

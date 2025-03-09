@@ -3,33 +3,33 @@
 export {};
 
 declare global {
-  // Themes
-  type Theme = "light" | "dark";
+  // Theme Type
+  type ThemeType = "light" | "dark";
 
-  // Image
-  interface Image {
+  // Image Props
+  interface ImageProps {
     url: string;
     alt: string;
     width: number;
     height: number;
   }
 
-  // Button Link Props
-  interface ButtonLink {
+  // CTA Button Props
+  interface CtaButtonProps {
     children: React.ReactNode; // Button Content
     href: string; // URL
     newTab?: boolean; // Opens in new tab?
     type?: "solid" | "outline" | "link"; // Button type
-    theme?: Theme; // Colour theme
+    theme?: ThemeType; // Colour theme
     className?: string; // Optional classes
   }
 
-  // Button Link List
-  type ButtonLinkList = Array<ButtonLink>;
+  // CTA Button List props
+  type CtaButtonListProps = Array<CtaButtonProps>;
 
   // Heading Props
-  interface Heading {
-    theme?: Theme;
+  interface HeadingProps {
+    theme?: ThemeType;
     centered?: boolean;
     byline: string;
     headline: string;
@@ -37,50 +37,50 @@ declare global {
   }
 
   // Hero Block
-  interface HeroBlock {
-    theme?: Theme;
+  interface HeroBlockProps {
+    theme?: ThemeType;
   }
 
   // Text Block
-  interface TextBlock {
-    theme?: Theme;
+  interface TextBlockProps {
+    theme?: ThemeType;
   }
 
   // Feature Block
-  interface FeatureBlock {
-    theme?: Theme;
+  interface FeatureBlockProps {
+    theme?: ThemeType;
     mediaDirection?: "left" | "right";
   }
 
-  interface Card {
-    img: Image;
+  interface CardProps {
+    img: ImageProps;
     byline: string;
     headline: string;
     copy: string;
-    cta: ButtonLink;
+    cta: CtaButton;
   }
 
   // Card Block
-  interface CardBlock {
-    theme?: Theme;
+  interface CardBlockProps {
+    theme?: ThemeType;
   }
 
   // List Item
-  interface ListItem {
+  interface ListItemProps {
     icon: string;
     headline: string;
     copy: string;
   }
 
   // List Block
-  interface ListBlock {
-    theme?: Theme;
-    heading: Heading;
+  interface ListBlockProps {
+    theme?: ThemeType;
+    heading: HeadingProps;
     list: Array<ListItem>;
   }
 
   // CTA Block
-  interface CtaBlock {
-    theme?: Theme;
+  interface CtaBlockProps {
+    theme?: ThemeType;
   }
 }

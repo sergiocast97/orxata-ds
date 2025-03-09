@@ -1,4 +1,4 @@
-export default function TextOneBlock({ theme = "dark" }: TextBlock) {
+export default function TextOneBlock({ theme = "dark" }: TextBlockProps) {
   return (
     <section data-theme={theme}>
       <div className="bg-light-white dark:bg-dark-darkest text-light-darkest dark:text-dark-white">

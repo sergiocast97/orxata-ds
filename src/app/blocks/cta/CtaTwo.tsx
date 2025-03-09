@@ -1,6 +1,6 @@
-import ButtonLinkList from "@/app/patterns/ButtonLinkList";
+import CtaButtonList from "@/app/patterns/CtaButtonList";
 
-export default function CtaTwoBlock({ theme = "dark" }: CtaBlock) {
+export default function CtaTwoBlock({ theme = "dark" }: CtaBlockProps) {
   return (
     <section data-theme={theme}>
       <div className="bg-light-white dark:bg-dark-darkest text-dark-white">
@@ -12,7 +12,7 @@ export default function CtaTwoBlock({ theme = "dark" }: CtaBlock) {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore.
               </p>
-              <ButtonLinkList
+              <CtaButtonList
                 theme={theme}
                 ctas={[
                   { href: "#", children: "Learn more" },

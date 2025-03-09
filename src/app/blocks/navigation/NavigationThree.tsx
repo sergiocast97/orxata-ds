@@ -1,8 +1,8 @@
-import ButtonLink from "@/app/components/ButtonLink";
+import CtaButton from "@/app/components/CtaButton";
 import Logo from "@/app/components/Logo";
 import NavItems from "@/app/patterns/NavItems";
 
-export default function NavigationThreeBlock({ theme = "dark" }: { theme: Theme }) {
+export default function NavigationThreeBlock({ theme = "dark" }: { theme: ThemeType }) {
   return (
     <>
       <section data-theme={theme}>
@@ -14,12 +14,12 @@ export default function NavigationThreeBlock({ theme = "dark" }: { theme: Theme 
                 <NavItems />
               </div>
               <div className="hidden items-baseline gap-6 md:flex lg:gap-8">
-                <ButtonLink href="#" type="link" theme={theme}>
+                <CtaButton href="#" type="link" theme={theme}>
                   Login
-                </ButtonLink>
-                <ButtonLink href="#" type="solid" theme={theme}>
+                </CtaButton>
+                <CtaButton href="#" type="solid" theme={theme}>
                   Learn more
-                </ButtonLink>
+                </CtaButton>
               </div>
             </div>
           </div>

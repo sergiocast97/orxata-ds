@@ -1,6 +1,6 @@
-import ButtonLinkList from "@/app/patterns/ButtonLinkList";
+import CtaButtonList from "@/app/patterns/CtaButtonList";
 
-export default function CtaOneBlock({ theme = "dark" }: CtaBlock) {
+export default function CtaOneBlock({ theme = "dark" }: CtaBlockProps) {
   return (
     <section data-theme={theme}>
       <div className="bg-dark-darkest dark:bg-dark-dark text-dark-white">
@@ -17,7 +17,7 @@ export default function CtaOneBlock({ theme = "dark" }: CtaBlock) {
                 </p>
               </div>
               <div className="flex lg:justify-end">
-                <ButtonLinkList
+                <CtaButtonList
                   theme={theme}
                   ctas={[
                     { href: "#", children: "Learn more" },

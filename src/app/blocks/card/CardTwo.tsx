@@ -1,7 +1,7 @@
 import Heading from "@/app/patterns/Heading";
 import CardTwo from "@/app/patterns/CardTwo";
 
-export default function CardTwoBlock({ theme = "dark" }: CardBlock) {
+export default function CardTwoBlock({ theme = "dark" }: CardBlockProps) {
   return (
     <section data-theme={theme}>
       <div className="bg-light-white dark:bg-dark-darkest text-light-darkest dark:text-dark-white overflow-hidden">

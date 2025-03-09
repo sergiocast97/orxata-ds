@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function CardTwo({ img, byline, headline, copy, cta }: Card) {
+export default function CardTwo({ img, byline, headline, copy, cta }: CardProps) {
   return (
     <div className="w-full">
       <Link href={cta.href}>

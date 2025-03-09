@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import ButtonLinkList from "./ButtonLinkList";
+import CtaButtonList from "@/app/patterns/CtaButtonList";
 
 export default function Heading({
   theme = "dark",
@@ -7,7 +7,7 @@ export default function Heading({
   byline = "",
   headline,
   copy,
-}: Heading) {
+}: HeadingProps) {
   return (
     <div
       className={clsx(
@@ -25,7 +25,7 @@ export default function Heading({
         {copy}
       </p>
 
-      <ButtonLinkList
+      <CtaButtonList
         theme={theme}
         ctas={[
           { href: "#", children: "Learn more" },
