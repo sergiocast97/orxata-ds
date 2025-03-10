@@ -26,12 +26,14 @@ export default function Typography() {
   ];
   return (
     <div>
-      <h2 className="mb-8 font-bold font-heading text-5xl">Typography</h2>
+      <h2 className="font-heading mb-4 text-3xl font-bold md:mb-6 md:text-4xl lg:mb-8 lg:text-5xl">
+        Typography
+      </h2>
       <div className="flex flex-wrap gap-8 md:gap-12">
         {content.map((element, index) => {
           return (
             <div key={index}>
-              <h3 className="mb-6 text-4xl/tight font-bold font-heading">
+              <h3 className="font-heading mb-2 text-2xl font-bold md:mb-4 md:text-3xl lg:mb-6 lg:text-4xl">
                 {element.name}: {element.fontName}
               </h3>
 

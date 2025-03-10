@@ -25,21 +25,25 @@ export default function ColourPalette() {
   ];
   return (
     <div>
-      <h3 className="font-heading mb-8 text-5xl font-bold">Colour Palette</h3>
+      <h2 className="font-heading mb-4 text-3xl font-bold md:mb-6 md:text-4xl lg:mb-8 lg:text-5xl">
+        Colour Palette
+      </h2>
       <div className="space-y-8">
         {content.map((palette, index) => {
           return (
             <div key={index} className="">
-              <h4 className="font-heading mb-6 text-4xl font-bold">{palette.title}</h4>
+              <h3 className="font-heading mb-4 text-2xl font-bold md:text-3xl lg:mb-6 lg:text-4xl">
+                {palette.title}
+              </h3>
               <div className="flex flex-wrap gap-4 md:gap-6">
                 {palette.items.map((item, index) => {
                   return (
                     <div key={index}>
                       <div
-                        className={` ${item.class} rounded-medium size-32 border border-neutral-500/50`}
+                        className={` ${item.class} rounded-medium size-24 border border-neutral-500/50 md:size-32`}
                       ></div>
 
-                      <p className="body-md text-light-dark dark:text-dark-lightest mt-1 font-semibold">
+                      <p className="text-light-dark dark:text-dark-lightest mt-1 text-base font-semibold">
                         {item.name}
                       </p>
                     </div>
