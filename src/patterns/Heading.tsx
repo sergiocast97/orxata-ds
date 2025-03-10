@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cn } from "@/lib/utils";
 import CtaButtonList from "@/patterns/CtaButtonList";
 
 export default function Heading({
@@ -10,7 +10,7 @@ export default function Heading({
 }: HeadingProps) {
   return (
     <div
-      className={clsx(
+      className={cn(
         "max-w-container-small text-light-dark dark:text-dark-lightest mb-8 flex flex-col md:mb-12 lg:mb-16",
         centered && "md:mx-auto md:items-center md:text-center",
       )}

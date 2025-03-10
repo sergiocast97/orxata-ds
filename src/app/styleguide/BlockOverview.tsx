@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cn } from "@/lib/utils";
 
 import NavigationOneBlock from "@/blocks/navigation/NavigationOne";
 import NavigationTwoBlock from "@/blocks/navigation/NavigationTwo";
@@ -127,7 +127,7 @@ function BlockTitle({
   return (
     <>
       <section>
-        <div className={clsx(main ? "bg-neutral-700" : "bg-neutral-600")}>
+        <div className={cn(main ? "bg-neutral-700" : "bg-neutral-600")}>
           <div className="container grid place-content-center py-8">
             <h2 className="text-dark-white text-3xl font-bold">{title}</h2>
           </div>

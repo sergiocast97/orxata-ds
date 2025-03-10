@@ -6,8 +6,8 @@ export default function CtaOneBlock({ theme = "dark" }: CtaBlockProps) {
       <div className="bg-dark-darkest dark:bg-dark-dark text-dark-white">
         <div className="container py-8 lg:py-12">
           <div className="max-w-container-small lg:max-w-container-large mx-auto">
-            <div className="lg:items-left flex flex-col items-center text-center lg:flex-row lg:items-center lg:justify-between lg:text-left">
-              <div className="">
+            <div className="flex flex-col items-start lg:flex-row lg:items-center lg:justify-between">
+              <div>
                 <h2 className="font-heading text-3xl font-bold md:text-4xl lg:text-5xl">
                   Call to Action Title
                 </h2>
@@ -17,7 +17,7 @@ export default function CtaOneBlock({ theme = "dark" }: CtaBlockProps) {
                 </p>
               </div>
               <CtaButtonList
-                className="items-center justify-center"
+                className="lg:mt-0"
                 theme="dark"
                 ctas={[
                   { href: "#", children: "Learn more" },

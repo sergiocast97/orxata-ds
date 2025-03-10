@@ -1,3 +1,5 @@
+import { cn } from "@/lib/utils";
+
 import CtaButton from "@/components/CtaButton";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
@@ -12,7 +14,10 @@ export default function CtaButtonList({
 }) {
   return (
     <div
-      className={`mt-4 flex flex-shrink-0 flex-wrap items-baseline gap-4 md:mt-6 md:gap-x-6 ${className}`}
+      className={cn(
+        "mt-4 flex flex-shrink-0 flex-wrap items-baseline gap-4 md:mt-6 md:gap-x-6",
+        className,
+      )}
     >
       {ctas?.map((cta, index) => (
         <CtaButton

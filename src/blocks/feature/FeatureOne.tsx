@@ -1,7 +1,7 @@
 // @refresh reset
 
 import Image from "next/image";
-import clsx from "clsx";
+import { cn } from "@/lib/utils";
 
 import CtaButtonList from "@/patterns/CtaButtonList";
 
@@ -15,7 +15,7 @@ export default function FeatureOneBlock({
         <div className="container py-8 lg:py-12">
           <div className="max-w-container-small lg:max-w-container-large mx-auto grid gap-6 md:gap-8 lg:grid-cols-2">
             <div
-              className={clsx(
+              className={cn(
                 mediaDirection === "left" ? "order-first" : "order-last",
                 "order h-full",
               )}
