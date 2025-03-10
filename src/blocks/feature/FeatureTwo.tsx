@@ -31,7 +31,7 @@ export default function FeatureTwoBlock({
               <p className="text-light-dark dark:text-dark-lightest mb-1 text-base font-semibold md:text-lg">
                 Lorem ipsum dolor sit
               </p>
-              <h2 className="font-heading text-dark-white mb-2 text-3xl font-bold lg:text-4xl">
+              <h2 className="font-heading text-dark-white mb-2 text-3xl font-bold text-balance lg:text-4xl">
                 Feature Block Title
               </h2>
               <div className="text-dark-lightest max-w-[48ch] text-base/relaxed md:text-lg/relaxed">

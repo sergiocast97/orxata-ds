@@ -8,7 +8,7 @@ export default function TextOneBlock({ theme = "dark" }: TextBlockProps) {
               <p className="text-light-dark dark:text-dark-lightest mb-1 text-base font-semibold md:text-lg">
                 Lorem ipsum dolor sit amet
               </p>
-              <h2 className="font-heading text-3xl font-bold md:text-4xl lg:text-5xl">
+              <h2 className="font-heading text-3xl font-bold text-balance md:text-4xl lg:text-5xl">
                 Text Block Title
               </h2>
             </div>
