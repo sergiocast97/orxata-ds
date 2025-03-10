@@ -6,8 +6,8 @@ export default function HeroTwoBlock({ theme = "dark" }: HeroBlockProps) {
   return (
     <section data-theme={theme}>
       <div className="bg-light-white dark:bg-dark-darkest text-light-darkest dark:text-dark-white">
-        <div className="container py-12 md:py-16 lg:pb-24">
-          <div className="grid grid-cols-1 place-items-center gap-8 lg:grid-cols-2 lg:gap-12">
+        <div className="container pt-6 pb-12 md:pb-16">
+          <div className="grid grid-cols-1 place-items-center gap-8 lg:grid-cols-2">
             <div className="flex flex-col items-start justify-center">
               <p className="text-light-dark dark:text-dark-lightest text-base font-semibold md:text-lg">
                 Lorem ipsum dolor sit amet

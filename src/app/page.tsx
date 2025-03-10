@@ -1,20 +1,20 @@
-import NavigationOneBlock from "@/blocks/navigation/NavigationOne";
-import HeroOneBlock from "@/blocks/hero/HeroOne";
-import TextOneBlock from "@/blocks/text/TextOne";
-import CardTwoBlock from "@/blocks/card/CardTwo";
-import CtaThreeBlock from "@/blocks/cta/CtaThree";
-import FooterOne from "@/blocks/footer/FooterOne";
+import Navigation from "@/blocks/navigation/NavigationOne";
+import HeroBlock from "@/blocks/hero/HeroOne";
+import TextBlock from "@/blocks/text/TextOne";
+import CardBlock from "@/blocks/card/CardTwo";
+import CtaBlock from "@/blocks/cta/CtaThree";
+import Footer from "@/blocks/footer/FooterOne";
 
 export default function Home() {
   const theme = "light";
   return (
     <>
-      <NavigationOneBlock theme={theme} />
-      <HeroOneBlock theme={theme} />
-      <TextOneBlock theme="dark" />
-      <CardTwoBlock theme={theme} />
-      <CtaThreeBlock theme={theme} />
-      <FooterOne />
+      <Navigation theme={theme} />
+      <HeroBlock theme={theme} />
+      <TextBlock theme="dark" />
+      <CardBlock theme={theme} />
+      <CtaBlock theme={theme} />
+      <Footer />
     </>
   );
 }

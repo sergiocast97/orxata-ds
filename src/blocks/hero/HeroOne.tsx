@@ -6,7 +6,7 @@ export default function HeroOneBlock({ theme = "dark" }: HeroBlockProps) {
   return (
     <section data-theme={theme}>
       <div className="bg-light-white dark:bg-dark-darkest text-light-darkest dark:text-dark-white">
-        <div className="container py-12 md:py-16 lg:pb-24">
+        <div className="container pt-6 pb-12 md:pb-16">
           <Image
             width={1280}
             height={360}

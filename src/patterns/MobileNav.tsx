@@ -42,7 +42,7 @@ export default function MobileNav({ theme = "dark" }: { theme?: ThemeType }) {
             </div>
 
             <div className="mt-8 space-y-12 md:mt-12">
-              <NavItems className="flex-col items-start" />
+              <NavItems className="flex-col items-start gap-y-6" />
               <NavCtas className="flex-row-reverse justify-end" theme={theme} />
             </div>
           </DialogPanel>

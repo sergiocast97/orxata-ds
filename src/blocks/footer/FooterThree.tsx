@@ -7,10 +7,10 @@ export default function FooterOne({}) {
   return (
     <footer data-theme="dark">
       <div className="bg-dark-darkest text-dark-white">
-        <div className="container flex flex-col justify-between gap-6 py-16 md:flex-row lg:gap-8">
-          <div className="flex-shrink-0">
+        <div className="container flex flex-col justify-between gap-6 py-12 md:flex-row lg:gap-8 lg:py-16">
+          <div className="min-w-3xs flex-shrink-0">
             <Logo theme="dark" />
-            <p className="mt-4 mb-6 text-lg">Lorem ipsum dolor sit amet.</p>
+            <p className="mt-4 mb-6 text-base lg:text-lg">Lorem ipsum dolor sit amet.</p>
             <ContactDetails />
           </div>
           <div className="lg:w-container-small grid grid-cols-3 gap-6 lg:gap-8">
