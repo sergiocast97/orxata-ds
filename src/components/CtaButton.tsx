@@ -24,7 +24,7 @@ export default function CtaButton({
     ),
     // Themed outline buttons
     outline: clsx(
-      "px-4 py-2 rounded-medium border-2 active:border-neutral-weak",
+      "px-4 py-2 rounded-medium border-2 active:border-neutral-weak border-box",
       theme === "light"
         ? " border-neutral-900 text-neutral-900 " // Light
         : " border-neutral-000 text-neutral-000 ", // Dark

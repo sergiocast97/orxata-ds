@@ -5,9 +5,9 @@ import CtaButtonList from "@/patterns/CtaButtonList";
 export default function CtaThreeBlock({ theme = "dark" }: CtaBlockProps) {
   return (
     <section data-theme={theme}>
-      <div className="bg-light-white dark:bg-dark-darkest">
+      <div className="bg-light-white dark:bg-dark-darkest text-dark-white">
         <div className="container py-8 lg:py-12">
-          <div className="bg-dark-dark border-dark-medium max-w-container-large rounded-large mx-auto grid grid-cols-1 overflow-hidden border md:grid-cols-2">
+          <div className="bg-dark-dark border-dark-medium max-w-container-small lg:max-w-container-large rounded-large mx-auto grid overflow-hidden border lg:grid-cols-2">
             <div className="order order-last h-full">
               <Image
                 width={504}
@@ -18,23 +18,21 @@ export default function CtaThreeBlock({ theme = "dark" }: CtaBlockProps) {
                 loading="lazy"
               />
             </div>
-            <div className="flex flex-col items-start justify-center p-4 md:p-6 lg:p-8">
-              <h2 className="font-heading text-dark-white mb-2 text-4xl font-bold">
+            <div className="flex flex-col items-start justify-center px-4 py-8 lg:px-8 lg:py-12">
+              <h2 className="font-heading text-3xl font-bold text-balance md:text-4xl lg:text-5xl">
                 Call to Action
               </h2>
-              <div className="text-dark-lightest text-lg/relaxed">
+              <p className="text-dark-lightest mt-2 max-w-[44ch] text-base/relaxed md:text-lg/relaxed lg:mt-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore.
-              </div>
-              <div className="mt-2">
-                <CtaButtonList
-                  theme="dark"
-                  ctas={[
-                    { href: "#", children: "Learn more" },
-                    { href: "#", children: "Learn more" },
-                  ]}
-                />
-              </div>
+              </p>
+              <CtaButtonList
+                theme="dark"
+                ctas={[
+                  { href: "#", children: "Learn more" },
+                  { href: "#", children: "Learn more" },
+                ]}
+              />
             </div>
           </div>
         </div>

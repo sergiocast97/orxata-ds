@@ -11,7 +11,9 @@ export default function CtaButtonList({
   className?: string;
 }) {
   return (
-    <div className={`mt-4 flex flex-wrap items-baseline gap-4 md:mt-6 md:gap-x-6 ${className}`}>
+    <div
+      className={`mt-4 flex flex-shrink-0 flex-wrap items-baseline gap-4 md:mt-6 md:gap-x-6 ${className}`}
+    >
       {ctas?.map((cta, index) => (
         <CtaButton
           href={cta.href}
