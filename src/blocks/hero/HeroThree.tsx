@@ -6,8 +6,8 @@ export default function HeroThreeBlock({ theme = "dark" }: HeroBlockProps) {
   return (
     <section data-theme={theme}>
       <div className="bg-light-white dark:bg-dark-darkest text-light-darkest dark:text-dark-white">
-        <div className="container py-8 pb-24 lg:pt-12">
-          <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-12 text-center">
+        <div className="container py-12 md:py-16 lg:pb-24">
+          <div className="max-w-container-large mx-auto flex flex-col items-center justify-center gap-8 text-center lg:gap-12">
             <Image
               width={1280}
               height={360}
@@ -17,16 +17,17 @@ export default function HeroThreeBlock({ theme = "dark" }: HeroBlockProps) {
               loading="lazy"
             />
 
-            <div className="mx-auto flex max-w-2xl flex-col items-center justify-center">
-              <p className="text-light-dark dark:text-dark-lightest mb-1 text-lg/relaxed font-semibold">
+            <div className="max-w-container-small mx-auto flex flex-col items-center justify-center">
+              <p className="text-light-dark dark:text-dark-lightest text-base font-semibold md:text-lg">
                 Lorem ipsum dolor sit amet
               </p>
               <h1 className="font-heading text-4xl font-bold text-balance md:text-5xl lg:text-6xl">
-                Impactful Headline about Product
+                Impactful headline on hero three title
               </h1>
-              <p className="text-light-dark dark:text-dark-lightest mt-4 max-w-[48ch] text-lg/relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra eros bibendum
-                sapien sagittis, ac efficitur felis accumsan. Vivamus ut efficitur risus.
+              <p className="text-light-dark dark:text-dark-lightest mt-4 max-w-[48ch] text-lg md:text-xl/relaxed">
+                Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Etiam viverra eros
+                bibendum sapien sagittis, ac efficitur felis dolor accumsan. Vivamus ut efficitur
+                risus.
               </p>
               <div>
                 <CtaButtonList

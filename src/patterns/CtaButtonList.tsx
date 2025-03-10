@@ -4,12 +4,14 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
 export default function CtaButtonList({
   ctas,
   theme = "dark",
+  className = "",
 }: {
   ctas: CtaButtonListProps;
   theme: ThemeType;
+  className?: string;
 }) {
   return (
-    <div className="mt-4 flex grow flex-wrap gap-4 md:mt-6 md:gap-y-6">
+    <div className={`mt-4 flex flex-wrap items-baseline gap-4 md:mt-6 md:gap-x-6 ${className}`}>
       {ctas?.map((cta, index) => (
         <CtaButton
           href={cta.href}

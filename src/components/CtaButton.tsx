@@ -11,7 +11,7 @@ export default function CtaButton({
 }: CtaButtonProps) {
   // Button's base styles
   const baseStyles =
-    "inline-flex text-nowrap items-center gap-1 transition focus:outline-0 text-lg font-semibold";
+    "inline-flex text-nowrap items-center gap-1 transition focus:outline-0 text-base md:text-lg font-semibold";
 
   // Styles specific to button types
   const buttonTypeStyles = {
@@ -31,7 +31,7 @@ export default function CtaButton({
     ),
     // Themed link buttobs
     link: clsx(
-      "underline decoration-2 underline-offset-8",
+      "p-2 underline decoration-2 underline-offset-8",
       theme === "light"
         ? "text-light-darkest active:text-neutral-600 " // Light
         : "text-dark-white active:text-neutral-050 ", // Dark
