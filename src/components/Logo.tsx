@@ -1,7 +1,15 @@
-const Logo = ({ theme = "dark" }: { theme?: ThemeType }) => (
-  <div className="flex gap-4">
+import { cn } from "@/lib/utils";
+import Link from "next/link";
+
+const Logo = ({ theme = "dark", className = "" }: { theme?: ThemeType; className?: string }) => (
+  <Link href="#">
+    <span className="sr-only">Orxata DS</span>
     <svg
-      className={`h-8 w-auto ${theme === "dark" ? "text-dark-white" : "text-light-darkest"}`}
+      className={cn(
+        "h-8 w-auto",
+        theme === "dark" ? "text-dark-white" : "text-light-darkest",
+        className,
+      )}
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 189 32"
@@ -25,9 +33,7 @@ const Logo = ({ theme = "dark" }: { theme?: ThemeType }) => (
         </clipPath>
       </defs>
     </svg>
-
-    <span className="sr-only">Orxata DS</span>
-  </div>
+  </Link>
 );
 
 export default Logo;

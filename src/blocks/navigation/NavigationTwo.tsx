@@ -1,5 +1,6 @@
-import CtaButton from "@/components/CtaButton";
 import Logo from "@/components/Logo";
+import MobileNav from "@/patterns/MobileNav";
+import NavCtas from "@/patterns/NavCtas";
 import NavItems from "@/patterns/NavItems";
 
 export default function NavigationTwoBlock({ theme = "dark" }: { theme: ThemeType }) {
@@ -10,15 +11,9 @@ export default function NavigationTwoBlock({ theme = "dark" }: { theme: ThemeTyp
           <div className="container py-8 lg:pt-12">
             <div className="flex items-center justify-between gap-8">
               <Logo theme={theme} />
-              <NavItems />
-              <div className="hidden items-baseline gap-6 md:flex lg:gap-8">
-                <CtaButton href="#" type="link" theme={theme}>
-                  Login
-                </CtaButton>
-                <CtaButton href="#" type="solid" theme={theme}>
-                  Learn more
-                </CtaButton>
-              </div>
+              <NavItems className="hidden lg:flex" />
+              <NavCtas className="hidden lg:flex" theme={theme} />
+              <MobileNav theme={theme} />
             </div>
           </div>
         </div>

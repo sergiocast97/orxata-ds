@@ -1,5 +1,6 @@
-import CtaButton from "@/components/CtaButton";
 import Logo from "@/components/Logo";
+import MobileNav from "@/patterns/MobileNav";
+import NavCtas from "@/patterns/NavCtas";
 import NavItems from "@/patterns/NavItems";
 
 export default function NavigationThreeBlock({ theme = "dark" }: { theme: ThemeType }) {
@@ -11,16 +12,10 @@ export default function NavigationThreeBlock({ theme = "dark" }: { theme: ThemeT
             <div className="flex items-center justify-between gap-8">
               <div className="flex items-center justify-start gap-8 lg:gap-12">
                 <Logo theme={theme} />
-                <NavItems />
+                <NavItems className="hidden lg:flex" />
               </div>
-              <div className="hidden items-baseline gap-6 md:flex lg:gap-8">
-                <CtaButton href="#" type="link" theme={theme}>
-                  Login
-                </CtaButton>
-                <CtaButton href="#" type="solid" theme={theme}>
-                  Learn more
-                </CtaButton>
-              </div>
+              <NavCtas className="hidden lg:flex" theme={theme} />
+              <MobileNav />
             </div>
           </div>
         </div>
