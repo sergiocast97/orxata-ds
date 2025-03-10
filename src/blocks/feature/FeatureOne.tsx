@@ -1,3 +1,5 @@
+// @refresh reset
+
 import Image from "next/image";
 import clsx from "clsx";
 
@@ -11,7 +13,7 @@ export default function FeatureOneBlock({
     <section data-theme={theme}>
       <div className="bg-light-white dark:bg-dark-darkest text-light-darkest dark:text-dark-white">
         <div className="container py-8 lg:py-12">
-          <div className="max-w-container-large mx-auto grid grid-cols-1 gap-6 md:grid-cols-2 xl:gap-8">
+          <div className="max-w-container-small lg:max-w-container-large mx-auto grid gap-6 md:gap-8 lg:grid-cols-2">
             <div
               className={clsx(
                 mediaDirection === "left" ? "order-first" : "order-last",
@@ -28,14 +30,16 @@ export default function FeatureOneBlock({
               />
             </div>
             <div className="flex flex-col items-start justify-center">
-              <p className="text-light-dark dark:text-dark-lightest mb-1 text-lg font-semibold">
+              <p className="text-light-dark dark:text-dark-lightest mb-1 text-base font-semibold md:text-lg">
                 Lorem ipsum dolor sit
               </p>
-              <h2 className="font-heading mb-2 text-4xl font-bold">Feature Block Title</h2>
-              <div className="text-light-dark dark:text-dark-lightest text-lg/relaxed">
+              <h2 className="font-heading mb-2 text-3xl font-bold lg:text-4xl">
+                Feature Block Title
+              </h2>
+              <p className="text-light-dark dark:text-dark-lightest max-w-[48ch] text-base/relaxed md:text-lg/relaxed">
                 Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec, dapibus ac
                 arcu. Vivamus erat massa, posuere sit amet orci at, viverra hendrerit sem.
-              </div>
+              </p>
               <div>
                 <CtaButtonList
                   theme={theme}

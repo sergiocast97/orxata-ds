@@ -11,7 +11,7 @@ export default function FeatureTwoBlock({
     <section data-theme={theme}>
       <div className="bg-light-white dark:bg-dark-darkest">
         <div className="container py-8 lg:py-12">
-          <div className="bg-dark-dark border-dark-medium max-w-container-large rounded-large mx-auto grid grid-cols-1 overflow-hidden border md:grid-cols-2">
+          <div className="bg-dark-dark border-dark-medium max-w-container-small lg:max-w-container-large rounded-large mx-auto grid grid-cols-1 overflow-hidden border lg:grid-cols-2">
             <div
               className={clsx(
                 mediaDirection === "left" ? "order-first" : "order-last",
@@ -27,12 +27,14 @@ export default function FeatureTwoBlock({
                 loading="lazy"
               />
             </div>
-            <div className="flex flex-col items-start justify-center p-4 md:p-6 lg:p-8">
-              <p className="text-dark-lightest mb-1 text-lg font-semibold">Lorem ipsum dolor sit</p>
-              <h2 className="font-heading text-dark-white mb-2 text-4xl font-bold">
+            <div className="flex flex-col items-start justify-center px-4 py-8 lg:px-8 lg:py-12">
+              <p className="text-light-dark dark:text-dark-lightest mb-1 text-base font-semibold md:text-lg">
+                Lorem ipsum dolor sit
+              </p>
+              <h2 className="font-heading text-dark-white mb-2 text-3xl font-bold lg:text-4xl">
                 Feature Block Title
               </h2>
-              <div className="text-dark-lightest text-lg/relaxed">
+              <div className="text-dark-lightest max-w-[48ch] text-base/relaxed md:text-lg/relaxed">
                 Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec, dapibus ac
                 arcu. Vivamus erat massa, posuere sit amet orci at, viverra hendrerit sem.
               </div>

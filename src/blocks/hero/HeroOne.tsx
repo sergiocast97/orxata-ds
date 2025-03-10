@@ -25,7 +25,7 @@ export default function HeroOneBlock({ theme = "dark" }: HeroBlockProps) {
               </h1>
             </div>
             <div className="flex flex-col items-start justify-center">
-              <p className="text-light-dark dark:text-dark-lightest max-w-[48ch] text-lg md:text-xl/relaxed">
+              <p className="text-light-dark dark:text-dark-lightest max-w-[48ch] text-lg/relaxed md:text-xl/relaxed">
                 Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Etiam viverra eros
                 bibendum sapien sagittis, ac efficitur felis dolor accumsan. Vivamus ut efficitur
                 risus.

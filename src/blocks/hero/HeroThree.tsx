@@ -24,7 +24,7 @@ export default function HeroThreeBlock({ theme = "dark" }: HeroBlockProps) {
               <h1 className="font-heading text-4xl font-bold text-balance md:text-5xl lg:text-6xl">
                 Impactful headline on hero three title
               </h1>
-              <p className="text-light-dark dark:text-dark-lightest mt-4 max-w-[48ch] text-lg md:text-xl/relaxed">
+              <p className="text-light-dark dark:text-dark-lightest mt-4 max-w-[48ch] text-lg/relaxed md:text-xl/relaxed">
                 Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Etiam viverra eros
                 bibendum sapien sagittis, ac efficitur felis dolor accumsan. Vivamus ut efficitur
                 risus.
