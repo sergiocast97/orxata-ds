@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"] *));
+
+@theme {
+  /* Fonts */
+  --font-*: initial;
+  --font-heading: "Times New Roman", Helvetica, sans-serif, system-ui;
+  --font-sans: "Arial", Helvetica, sans-serif, system-ui;
+
+  /* Neutral Palette */
+  --color-neutral-000: var(--color-white);
+  --color-neutral-050: var(--color-zinc-50);
+  --color-neutral-100: var(--color-zinc-100);
+  --color-neutral-200: var(--color-zinc-200);
+  --color-neutral-300: var(--color-zinc-300);
+  --color-neutral-400: var(--color-zinc-400);
+  --color-neutral-500: var(--color-zinc-500);
+  --color-neutral-600: var(--color-zinc-600);
+  --color-neutral-700: var(--color-zinc-700);
+  --color-neutral-800: var(--color-zinc-800);
+  --color-neutral-900: var(--color-zinc-900);
+  --color-neutral-950: var(--color-zinc-950);
+
+  /* Light Theme */
+  --color-light-white: var(--color-neutral-000); /* Background */
+  --color-light-lightest: var(--color-neutral-050); /* Background Accent */
+  --color-light-light: var(--color-neutral-200); /* Stroke Weak */
+  --color-light-medium: var(--color-neutral-500); /* Stroke Strong */
+  --color-light-dark: var(--color-neutral-600); /* Text Copy */
+  --color-light-darkest: var(--color-neutral-900); /* Text Heading */
+
+  /* Dark Theme */
+  --color-dark-darkest: var(--color-neutral-900); /* Background */
+  --color-dark-dark: var(--color-neutral-800); /* Background Accent */
+  --color-dark-medium: var(--color-neutral-600); /* Stroke Weak */
+  --color-dark-light: var(--color-neutral-400); /* Stroke Strong */
+  --color-dark-lightest: var(--color-neutral-300); /* Text Copy */
+  --color-dark-white: var(--color-neutral-000); /* Text Heading */
+
+  /* Corner Radius */
+  --radius-small: 0px;
+  --radius-medium: 0px;
+  --radius-large: 0px;
+
+  /* Container Sizes */
+  --spacing-container-small: 592px;
+  --spacing-container-medium: 800px;
+  --spacing-container-large: 1008px;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  max-width: var(--breakpoint-sm);
+  @variant md {
+    padding-inline: 2rem;
+    max-width: var(--breakpoint-md);
+  }
+  @variant lg {
+    max-width: var(--breakpoint-lg);
+  }
+  @variant xl {
+    max-width: var(--breakpoint-xl);
+  }
+}
+
+@layer utilities {
+  .btn-shadow {
+    box-shadow:
+      0px 1px 4px 0px rgba(58, 78, 102, 0.25),
+      0px 0px 0px 1px rgba(0, 0, 0, 0.25) inset,
+      0px -1px 0px 1px rgba(0, 0, 0, 0.1) inset,
+      0px 1px 0px 1px rgba(255, 255, 255, 0.25) inset;
+  }
+
+  .rendering-pixelated {
+    image-rendering: pixelated;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r bg-clip-text text-transparent;
+  }
+}
+
+@layer base {
+  html {
+    background-color: var(--color-dark-darkest);
+  }
+}
