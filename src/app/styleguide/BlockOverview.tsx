@@ -1,23 +1,30 @@
 import { cn } from "@/lib/utils";
 
-import NavigationOneBlock from "@/blocks/navigation/NavigationOne";
-import NavigationTwoBlock from "@/blocks/navigation/NavigationTwo";
-import NavigationThreeBlock from "@/blocks/navigation/NavigationThree";
+import NavigationOne from "@/blocks/navigation/NavigationOne";
+import NavigationTwo from "@/blocks/navigation/NavigationTwo";
+import NavigationThree from "@/blocks/navigation/NavigationThree";
+
 import HeroOneBlock from "@/blocks/hero/HeroOne";
 import HeroTwoBlock from "@/blocks/hero/HeroTwo";
 import HeroThreeBlock from "@/blocks/hero/HeroThree";
+
 import TextOneBlock from "@/blocks/text/TextOne";
 import TextTwoBlock from "@/blocks/text/TextTwo";
+
 import FeatureOneBlock from "@/blocks/feature/FeatureOne";
 import FeatureTwoBlock from "@/blocks/feature/FeatureTwo";
+
 import CardOneBlock from "@/blocks/card/CardOne";
 import CardTwoBlock from "@/blocks/card/CardTwo";
+
 import CtaOneBlock from "@/blocks/cta/CtaOne";
 import CtaTwoBlock from "@/blocks/cta/CtaTwo";
 import CtaThreeBlock from "@/blocks/cta/CtaThree";
 import CtaFourBlock from "@/blocks/cta/CtaFour";
+
 import NewsletterOneBlock from "@/blocks/newsletter/NewsletterOne";
 import NewsletterTwoBlock from "@/blocks/newsletter/NewsletterTwo";
+
 import FooterOne from "@/blocks/footer/FooterOne";
 import FooterTwo from "@/blocks/footer/FooterTwo";
 import FooterThree from "@/blocks/footer/FooterThree";
@@ -28,13 +35,13 @@ export default function BlockOverview({ theme }: { theme: ThemeType }) {
       {/* Navigation Blocks */}
       <BlockTitle title="Navigation" main={true} />
       <BlockTitle title="Navigation One">
-        <NavigationOneBlock theme={theme} />
+        <NavigationOne theme={theme} />
       </BlockTitle>
       <BlockTitle title="Navigation Two">
-        <NavigationTwoBlock theme={theme} />
+        <NavigationTwo theme={theme} />
       </BlockTitle>
       <BlockTitle title="Navigation Three">
-        <NavigationThreeBlock theme={theme} />
+        <NavigationThree theme={theme} />
       </BlockTitle>
 
       {/* Hero Blocks */}

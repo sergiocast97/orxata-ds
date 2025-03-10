@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 const Logo = ({ theme = "dark", className = "" }: { theme?: ThemeType; className?: string }) => (
-  <Link href="#">
+  <Link href="/">
     <span className="sr-only">Orxata DS</span>
     <svg
       className={cn(

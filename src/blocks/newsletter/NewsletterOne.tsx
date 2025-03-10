@@ -15,7 +15,7 @@ export default function NewsletterOneBlock({ theme = "dark" }: NewsletterBlockPr
                 <h2 className="font-heading text-2xl font-bold md:text-3xl lg:text-4xl">
                   Sign up to our Newsletter
                 </h2>
-                <p className="text-dark-lightest mt-2 max-w-[44ch] text-base/relaxed md:text-lg/relaxed">
+                <p className="text-light-dark dark:text-dark-lightest mt-2 max-w-[44ch] text-base/relaxed md:text-lg/relaxed">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore.
                 </p>

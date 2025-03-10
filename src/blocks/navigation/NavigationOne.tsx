@@ -3,7 +3,7 @@ import NavItems from "@/patterns/NavItems";
 import NavCtas from "@/patterns/NavCtas";
 import MobileNav from "@/patterns/MobileNav";
 
-export default function NavigationOneBlock({ theme = "dark" }: { theme: ThemeType }) {
+export default function NavigationOne({ theme = "dark" }: { theme: ThemeType }) {
   return (
     <>
       <section data-theme={theme}>
