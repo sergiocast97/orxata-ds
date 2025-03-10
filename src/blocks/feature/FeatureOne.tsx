@@ -34,7 +34,7 @@ export default function FeatureOneBlock({
                 Lorem ipsum dolor sit
               </p>
               <h2 className="font-heading mb-2 text-3xl font-bold lg:text-4xl">
-                Feature Block Title
+                Feature One Block Title
               </h2>
               <p className="text-light-dark dark:text-dark-lightest max-w-[48ch] text-base/relaxed md:text-lg/relaxed">
                 Donec vel auctor augue. Nulla metus sem, pellentesque ut cursus nec, dapibus ac
