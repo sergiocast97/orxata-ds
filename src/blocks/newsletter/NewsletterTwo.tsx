@@ -1,7 +1,6 @@
 "use client";
 
-import Button from "@/components/Button";
-import Textbox from "@/components/Textbox";
+import NewsletterForm from "@/patterns/NewsletterForm";
 
 interface NewsletterBlockProps {
   theme: ThemeType;
@@ -14,17 +13,14 @@ export default function NewsletterTwoBlock({ theme = "dark" }: NewsletterBlockPr
         <div className="container py-8 lg:py-12">
           <div className="max-w-container-large mx-auto">
             <div className="flex flex-col items-center justify-center text-center">
-              <h2 className="font-heading text-3xl font-bold md:text-4xl">
+              <h2 className="font-heading text-2xl font-bold md:text-3xl lg:text-4xl">
                 Sign up to our Newsletter
               </h2>
-              <p className="text-light-dark dark:text-dark-lightest mt-2 max-w-[44ch] text-base md:text-lg">
+              <p className="text-dark-lightest mt-2 max-w-[44ch] text-base/relaxed md:text-lg/relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore.
               </p>
-              <div className="mt-6 flex gap-4 md:mt-8">
-                <Textbox placeholder="Email" />
-                <Button theme={theme} type="submit" />
-              </div>
+              <NewsletterForm theme={theme} />
             </div>
           </div>
         </div>
