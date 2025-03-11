@@ -12,7 +12,7 @@ export default function HeroOneBlock({ theme = "dark" }: HeroBlockProps) {
             height={360}
             src="https://hwhfyb8e9b.ufs.sh/f/E8jMENC68tjA4lvPTjxfshF9qjNVRickg0ZzuwdolY726EL5"
             alt="Hero Image"
-            className="rounded-large aspect-[3/2] w-full object-cover sm:aspect-[2/1] lg:aspect-[3.25/1]"
+            className="rounded-large aspect-[3/2] w-full object-cover md:aspect-[2/1] lg:aspect-[3.25/1]"
             loading="lazy"
           />
           <div className="grid gap-4 pt-6 lg:grid-cols-2 lg:gap-8 lg:pt-8">

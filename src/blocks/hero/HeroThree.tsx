@@ -13,7 +13,7 @@ export default function HeroThreeBlock({ theme = "dark" }: HeroBlockProps) {
               height={360}
               src="https://hwhfyb8e9b.ufs.sh/f/E8jMENC68tjA4lvPTjxfshF9qjNVRickg0ZzuwdolY726EL5"
               alt="Hero Image"
-              className="rounded-large aspect-[3/2] w-full object-cover sm:aspect-[2/1] lg:aspect-[5/2]"
+              className="rounded-large aspect-[3/2] w-full object-cover md:aspect-[2/1] lg:aspect-[5/2]"
               loading="lazy"
             />
 
